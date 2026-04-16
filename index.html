@@ -33,7 +33,7 @@
     <a href="#deep">Intel</a>
     <a href="#mentors">Mentors</a>
   </div>
-  <a href="#closing" class="hud-btn">Join Now</a>
+  <a href="waitlist.html" class="hud-btn">Join Now</a>
 </nav>
 
 <section id="hero">
@@ -51,7 +51,7 @@
       <div class="ln"><span class="p">STATUS:</span> <span class="v">85M jobs displaced · 97M new roles · pick your side<span class="cursor"></span></span></div>
     </div>
     <div class="cta-row reveal">
-      <a href="#closing" class="hud-btn">Join The Waitlist</a>
+      <a href="waitlist.html" class="hud-btn">Join The Waitlist</a>
       <a href="#tracks" class="hud-btn outline">Explore Tracks</a>
     </div>
     <div class="emoji-float">
@@ -278,73 +278,10 @@
     <p class="reveal" style="text-align:center;margin:0 auto 16px;">This bootcamp exists so that someone is <em>you</em>.</p>
     <div class="you reveal">YOU.</div>
 
-    <div class="waitlist-wrap reveal">
-      <div class="limited-banner">
-        <span class="alert-badge">⚠ SLOTS EXTREMELY LIMITED</span>
-        <p>Cohort is capped. Register your interest below — slots open in waves based on fit and application time.</p>
-      </div>
-
-      <!-- TODO: replace action with your Formspree (or equivalent) endpoint -->
-      <form class="waitlist-form" id="waitlistForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
-        <div class="form-row">
-          <label>
-            <span class="flbl">// Full Name</span>
-            <input type="text" name="name" required autocomplete="name" />
-          </label>
-          <label>
-            <span class="flbl">// Email</span>
-            <input type="email" name="email" required autocomplete="email" />
-          </label>
-        </div>
-        <div class="form-row">
-          <label>
-            <span class="flbl">// Mobile <span class="opt">(WhatsApp)</span></span>
-            <input type="tel" name="mobile" autocomplete="tel" />
-          </label>
-          <label>
-            <span class="flbl">// Institution</span>
-            <select name="institution" required>
-              <option value="">— select —</option>
-              <option>Secondary School</option>
-              <option>Junior College / MI</option>
-              <option>ITE</option>
-              <option>Polytechnic</option>
-              <option>University</option>
-              <option>Other</option>
-            </select>
-          </label>
-        </div>
-        <div class="form-row">
-          <label>
-            <span class="flbl">// Year of Study</span>
-            <input type="text" name="year" required placeholder="e.g. Year 2" />
-          </label>
-          <label>
-            <span class="flbl">// Track of Interest</span>
-            <select name="track" required>
-              <option value="">— select —</option>
-              <option>Track 01 — AI Tools &amp; Future Work</option>
-              <option>Track 02 — Content Creator</option>
-              <option>Track 03 — Cybersecurity &amp; Bug Bounty</option>
-              <option>Track 04 — AI Entrepreneurship</option>
-              <option>Not sure yet</option>
-            </select>
-          </label>
-        </div>
-        <label class="full">
-          <span class="flbl">// Why Do You Want In? <span class="opt">(optional, short)</span></span>
-          <textarea name="why" rows="3" placeholder="One or two sentences — what are you hoping to walk away with?"></textarea>
-        </label>
-        <div class="form-submit">
-          <button type="submit" class="hud-btn pink" id="waitlistSubmit">Join The Waitlist</button>
-          <p class="form-note">We'll reply within 5 working days with next steps.</p>
-        </div>
-        <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
-      </form>
-      <div class="waitlist-done" id="waitlistDone" role="status" aria-live="polite">
-        <h3>▸ You're on the list.</h3>
-        <p>We received your application. Expect an email from us within 5 working days with the next step. Meanwhile — start automating one thing this week.</p>
-      </div>
+    <div class="closing-cta reveal">
+      <span class="alert-badge">⚠ SLOTS EXTREMELY LIMITED</span>
+      <a href="waitlist.html" class="hud-btn pink" style="font-size:14px;padding:16px 28px;">Join The Waitlist →</a>
+      <p class="cta-sub">Small cohort. Reviewed in waves. Reply within 5 working days.</p>
     </div>
   </div>
 </section>

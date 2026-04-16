@@ -186,6 +186,13 @@ em{font-style:normal;color:var(--cy)}
 .logi-grid .k{font-family:'Orbitron',sans-serif;font-size:10px;font-weight:700;letter-spacing:.2em;color:var(--gn);margin-bottom:8px;text-transform:uppercase}
 .logi-grid .val{color:#fff;font-weight:700;font-size:14px;margin-bottom:4px}
 .logi-grid p{font-size:12px;color:var(--tx2)}
+.closing-cta{margin-top:40px;display:flex;flex-direction:column;align-items:center;gap:18px}
+.closing-cta .alert-badge{display:inline-block;background:var(--or);color:#000;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:800;letter-spacing:.18em;padding:8px 16px;box-shadow:var(--bs) rgba(255,107,53,.35)}
+.closing-cta .cta-sub{font-size:12px;color:var(--tx2);letter-spacing:.08em}
+.waitlist-page{padding:140px 0 80px;min-height:calc(100vh - 200px);position:relative;z-index:3}
+.waitlist-page .wrap{max-width:860px}
+.waitlist-page .wl-title{font-size:clamp(36px,6vw,72px);margin:16px 0 12px}
+.waitlist-page .wl-sub{font-size:clamp(15px,1.6vw,18px);color:var(--tx);max-width:640px;margin-bottom:40px;line-height:1.6}
 .waitlist-wrap{max-width:760px;margin:48px auto 0;text-align:left}
 .limited-banner{border:3px solid var(--or);background:rgba(255,107,53,.08);padding:18px 22px;margin-bottom:28px;box-shadow:var(--bs) rgba(255,107,53,.25)}
 .limited-banner .alert-badge{display:inline-block;background:var(--or);color:#000;font-family:'Orbitron',sans-serif;font-size:11px;font-weight:800;letter-spacing:.15em;padding:5px 12px;margin-bottom:10px}
