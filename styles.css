@@ -108,7 +108,21 @@ em{font-style:normal;color:var(--cy)}
 .deep-stack{display:flex;flex-direction:column;gap:28px;margin-top:40px}
 .deep-block{--c:var(--cy);background:var(--bg2);border:3px solid var(--c);position:relative;box-shadow:var(--bs) color-mix(in srgb,var(--c) 30%,transparent)}
 .deep-block.t1{--c:var(--cy)}.deep-block.t2{--c:var(--pk)}.deep-block.t3{--c:var(--gn)}.deep-block.t4{--c:var(--or)}
-.deep-block .db-head{padding:24px 28px;border-bottom:3px solid var(--c);display:flex;align-items:center;gap:16px}
+.deep-block .db-head{width:100%;padding:22px 26px;border:none;border-bottom:3px solid var(--c);display:flex;align-items:center;gap:16px;background:transparent;color:inherit;font:inherit;text-align:left;cursor:pointer;transition:background .2s}
+.deep-block[data-expanded="false"] .db-head{border-bottom:3px solid transparent}
+.deep-block .db-head:hover{background:rgba(255,255,255,.02)}
+.deep-block .db-head:focus-visible{outline:2px solid var(--c);outline-offset:-6px}
+.deep-block .db-head .db-head-text{flex:1;min-width:0}
+.db-toggle{margin-left:auto;display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border:2px solid var(--c);background:rgba(0,0,0,.25);font-family:'Orbitron',sans-serif;font-size:10px;font-weight:800;letter-spacing:.2em;color:var(--c);text-transform:uppercase;transition:background .2s,color .2s;flex-shrink:0}
+.deep-block[data-expanded="true"] .db-toggle{background:var(--c);color:#000}
+.deep-block .db-head:hover .db-toggle{box-shadow:0 0 12px color-mix(in srgb,var(--c) 50%,transparent)}
+.db-toggle .tog-state::before{content:"Access"}
+.deep-block[data-expanded="true"] .db-toggle .tog-state::before{content:"Close"}
+.db-toggle .tog-icn{font-family:'Space Mono',monospace;font-size:15px;font-weight:700;line-height:1;width:12px;text-align:center;transition:transform .35s cubic-bezier(.4,0,.2,1)}
+.deep-block[data-expanded="true"] .db-toggle .tog-icn{transform:rotate(45deg)}
+.db-body-wrap{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s cubic-bezier(.4,0,.2,1)}
+.deep-block[data-expanded="true"] .db-body-wrap{grid-template-rows:1fr}
+.db-body-wrap > .db-body{min-height:0;overflow:hidden}
 .deep-block .db-head .ico{font-size:40px}
 .deep-block .db-head h3{color:var(--c);font-size:16px}
 .deep-block .db-head .tnum{font-family:'Orbitron',sans-serif;font-size:10px;color:var(--c);letter-spacing:.2em;opacity:.7}

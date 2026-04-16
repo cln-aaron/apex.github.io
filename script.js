@@ -87,6 +87,19 @@
   setTimeout(next,400);
 })();
 
+// Track Intel expand/collapse
+(function(){
+  const heads=document.querySelectorAll('.deep-block .db-head');
+  heads.forEach(head=>{
+    head.addEventListener('click',()=>{
+      const block=head.closest('.deep-block');
+      const isOpen=block.dataset.expanded==='true';
+      block.dataset.expanded=isOpen?'false':'true';
+      head.setAttribute('aria-expanded',String(!isOpen));
+    });
+  });
+})();
+
 // Waitlist form submission
 (function(){
   const form=document.getElementById('waitlistForm');
