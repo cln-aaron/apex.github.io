@@ -175,7 +175,47 @@ em{font-style:normal;color:var(--cy)}
 #closing .quote .acc{color:var(--cy);text-shadow:0 0 20px rgba(0,255,245,.5)}
 #closing .you{font-family:'Orbitron',sans-serif;font-weight:900;font-size:clamp(60px,12vw,160px);background:linear-gradient(90deg,var(--cy),var(--pk),var(--or),var(--gn));background-size:300% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shift 5s ease infinite;display:block;margin:20px 0 36px;line-height:.9}
 @keyframes shift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.org-by{display:inline-flex;align-items:center;gap:10px;margin-top:48px;padding:10px 16px;border:2px solid var(--bg3);background:rgba(18,18,31,.6)}
+.org-by .lbl{font-family:'Orbitron',sans-serif;font-size:9px;font-weight:700;letter-spacing:.22em;color:var(--tx2);text-transform:uppercase}
+.org-by .org-logo{width:22px;height:22px;color:var(--cy);filter:drop-shadow(0 0 6px rgba(0,255,245,.5))}
+.org-by .org-name a{font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.08em;transition:.2s}
+.org-by .org-name a:hover{color:var(--cy)}
+.org-by .amp{color:var(--pk)}
+#commandant{position:relative}
+#commandant::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 40%,rgba(184,51,255,.08),transparent 60%);pointer-events:none;z-index:-1}
+.dossier{display:grid;grid-template-columns:340px 1fr;gap:40px;margin-top:40px;align-items:start}
+.dossier-photo{position:relative}
+.photo-frame{position:relative;border:3px solid var(--pr);background:var(--bg2);box-shadow:var(--bs) rgba(184,51,255,.35);aspect-ratio:4/5;overflow:hidden}
+.photo-frame img{width:100%;height:100%;object-fit:cover;filter:saturate(0.85) contrast(1.05);display:block}
+.photo-frame .photo-hud{position:absolute;inset:0;pointer-events:none}
+.photo-frame .corner{position:absolute;width:22px;height:22px;border:3px solid var(--cy)}
+.photo-frame .corner.tl{top:6px;left:6px;border-right:none;border-bottom:none}
+.photo-frame .corner.tr{top:6px;right:6px;border-left:none;border-bottom:none}
+.photo-frame .corner.bl{bottom:6px;left:6px;border-right:none;border-top:none}
+.photo-frame .corner.br{bottom:6px;right:6px;border-left:none;border-top:none}
+.photo-frame .scan-line{position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,var(--cy),transparent);animation:scanDown 4s linear infinite;box-shadow:0 0 10px var(--cy)}
+@keyframes scanDown{0%{top:0}100%{top:100%}}
+.photo-frame .status{position:absolute;bottom:10px;left:10px;font-family:'Orbitron',sans-serif;font-size:9px;font-weight:700;letter-spacing:.18em;color:var(--gn);background:rgba(0,0,0,.7);padding:4px 8px;border:1px solid var(--gn)}
+.dossier-info .callsign{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.dossier-info .callsign .lbl{font-family:'Orbitron',sans-serif;font-size:9px;font-weight:700;letter-spacing:.22em;color:var(--tx2);text-transform:uppercase}
+.dossier-info .callsign .val{font-family:'Orbitron',sans-serif;font-size:12px;color:var(--pr);letter-spacing:.1em;padding:3px 10px;border:1px solid var(--pr);background:rgba(184,51,255,.1);text-transform:uppercase}
+.dossier-info .name{font-size:clamp(30px,4.5vw,52px);margin-bottom:6px;color:#fff}
+.dossier-info .role{font-family:'Orbitron',sans-serif;font-size:13px;color:var(--cy);letter-spacing:.08em;margin-bottom:22px}
+.dossier-info .bio p{font-size:14px;color:var(--tx);line-height:1.75;margin-bottom:14px;max-width:none}
+.dossier-info .bio a{color:var(--pr);text-decoration:none;border-bottom:1px solid var(--pr);transition:.2s}
+.dossier-info .bio a:hover{color:var(--cy);border-color:var(--cy)}
+.dossier-info .bio em{color:var(--pr);font-style:normal;font-weight:700}
+.dossier-info .traits{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:24px;padding-top:22px;border-top:2px dashed var(--bg3)}
+.dossier-info .traits .tr{display:flex;flex-direction:column;gap:4px}
+.dossier-info .traits .k{font-family:'Orbitron',sans-serif;font-size:9px;font-weight:700;letter-spacing:.22em;color:var(--pr);text-transform:uppercase}
+.dossier-info .traits .v{font-size:12px;color:var(--tx);font-weight:700}
+@media(max-width:760px){
+  .dossier{grid-template-columns:1fr;gap:28px}
+  .dossier-photo{max-width:320px}
+}
 footer{padding:40px 24px;border-top:3px solid var(--bg3);text-align:center;font-family:'Orbitron',sans-serif;font-size:10px;color:var(--tx2);letter-spacing:.15em;text-transform:uppercase;position:relative;z-index:3}
+.footer-org{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}
+.footer-logo{width:16px;height:16px;color:var(--cy);opacity:.8}
 footer .ln{margin-bottom:8px}
 footer a{color:var(--cy);text-decoration:none}
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}
