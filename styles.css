@@ -189,7 +189,8 @@ em{font-style:normal;color:var(--cy)}
 .closing-cta{margin-top:40px;display:flex;flex-direction:column;align-items:center;gap:18px}
 .closing-cta .alert-badge{display:inline-block;background:var(--or);color:#000;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:800;letter-spacing:.18em;padding:8px 16px;box-shadow:var(--bs) rgba(255,107,53,.35)}
 .closing-cta .cta-sub{font-size:12px;color:var(--tx2);letter-spacing:.08em}
-.waitlist-page{padding:140px 0 80px;min-height:calc(100vh - 200px);position:relative;z-index:3}
+.waitlist-page{padding:180px 0 80px;min-height:calc(100vh - 200px);position:relative;z-index:3}
+@media(max-width:640px){.waitlist-page{padding-top:150px}}
 .waitlist-page .wrap{max-width:860px}
 .waitlist-page .wl-title{font-size:clamp(36px,6vw,72px);margin:16px 0 12px}
 .waitlist-page .wl-sub{font-size:clamp(15px,1.6vw,18px);color:var(--tx);max-width:640px;margin-bottom:40px;line-height:1.6}
