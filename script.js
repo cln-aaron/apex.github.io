@@ -89,13 +89,39 @@
 
 // Track Intel expand/collapse
 (function(){
-  const heads=document.querySelectorAll('.deep-block .db-head');
-  heads.forEach(head=>{
+  const blocks=document.querySelectorAll('.deep-block');
+  blocks.forEach(block=>{
+    const head=block.querySelector('.db-head');
+    const wrap=block.querySelector('.db-body-wrap');
+    if(!head||!wrap)return;
+    // Force collapsed at load
+    wrap.style.maxHeight='0px';
+    wrap.style.opacity='0';
+    block.dataset.expanded='false';
+    head.setAttribute('aria-expanded','false');
     head.addEventListener('click',()=>{
-      const block=head.closest('.deep-block');
       const isOpen=block.dataset.expanded==='true';
-      block.dataset.expanded=isOpen?'false':'true';
-      head.setAttribute('aria-expanded',String(!isOpen));
+      if(isOpen){
+        wrap.style.maxHeight=wrap.scrollHeight+'px';
+        requestAnimationFrame(()=>{wrap.style.maxHeight='0px';wrap.style.opacity='0';});
+        block.dataset.expanded='false';
+        head.setAttribute('aria-expanded','false');
+      }else{
+        wrap.style.maxHeight=wrap.scrollHeight+'px';
+        wrap.style.opacity='1';
+        block.dataset.expanded='true';
+        head.setAttribute('aria-expanded','true');
+        // After animation completes, allow content to flex (handles window resize)
+        setTimeout(()=>{if(block.dataset.expanded==='true')wrap.style.maxHeight='none';},600);
+      }
+    });
+  });
+  // Recalculate on resize
+  window.addEventListener('resize',()=>{
+    blocks.forEach(block=>{
+      if(block.dataset.expanded!=='true')return;
+      const wrap=block.querySelector('.db-body-wrap');
+      if(wrap)wrap.style.maxHeight='none';
     });
   });
 })();
