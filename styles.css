@@ -128,6 +128,12 @@ em{font-style:normal;color:var(--cy)}
 .monet-grid .t{color:#fff;font-family:'Orbitron',sans-serif;font-size:11px;font-weight:700;margin-bottom:4px}
 .monet-grid p{font-size:11px;color:var(--tx2)}
 .mentor-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:40px}
+.recruit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:40px}
+.recruit-card{background:var(--bg2);border:3px solid var(--pk);padding:26px;box-shadow:var(--bs) rgba(255,46,147,.25);transition:.2s}
+.recruit-card:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 rgba(255,46,147,.4)}
+.recruit-card .ic{font-size:34px;margin-bottom:10px;display:block;filter:drop-shadow(0 0 10px rgba(255,46,147,.5))}
+.recruit-card h4{font-family:'Orbitron',sans-serif;font-size:13px;color:var(--pk);margin-bottom:8px;letter-spacing:.05em}
+.recruit-card p{font-size:12px;color:var(--tx2)}
 .mentor-card{background:var(--bg2);border:3px solid var(--bg3);padding:24px;box-shadow:var(--bs) rgba(0,0,0,.3);transition:.2s}
 .mentor-card:hover{border-color:var(--cy);box-shadow:var(--bs) rgba(0,255,245,.2)}
 .mentor-card .ic{font-size:36px;margin-bottom:10px;display:block}
