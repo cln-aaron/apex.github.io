@@ -1,488 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>APEX AI Bootcamp 2026 — Your Skills. Amplified.</title>
-<meta name="description" content="A two-day AI bootcamp for youths 16-30. AI tools, content creation, cybersecurity, entrepreneurship. 13-14 June 2026." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>APEX AI Bootcamp 2026</title>
+<meta name="description" content="Two-day AI bootcamp for youths 16-30. AI tools, content creation, cybersecurity, entrepreneurship. 13-14 June 2026."/>
+<link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-<div class="cursor-dot"></div>
-<div class="cursor-ring"></div>
+<div class="bg-blocks"></div>
 
-<nav>
-  <a href="#hero" class="logo"><span class="dot"></span> APEX/2026</a>
-  <div class="links">
-    <a href="#picture">Overview</a>
+<nav class="hud-nav">
+  <span class="logo"><span class="blink"></span>APEX//2026</span>
+  <div class="nav-links">
+    <a href="#mission">Mission</a>
     <a href="#tracks">Tracks</a>
     <a href="#schedule">Schedule</a>
-    <a href="#deep">Deep Dives</a>
+    <a href="#deep">Intel</a>
     <a href="#mentors">Mentors</a>
     <a href="#awards">Awards</a>
-    <a href="#logistics">Logistics</a>
   </div>
-  <a href="#closing" class="btn-cta">Register</a>
+  <a href="#closing" class="hud-btn">Join Now</a>
 </nav>
 
-<main id="top">
 <section id="hero">
-  <div class="scan"></div>
-  <div class="container">
-    <div class="hero-meta reveal">
-      <span class="pill live">Registration Open</span>
-      <span class="pill">13–14 JUN 2026</span>
-      <span class="pill">SG · AGES 16–30</span>
-    </div>
+  <div class="wrap">
+    <div class="hero-badge reveal">Registration Open — Slots Limited</div>
     <h1 class="reveal">
-      <span class="apex">APEX</span><br/>
-      <span class="glitch" data-text="AI BOOTCAMP">AI BOOTCAMP</span><br/>
-      <span style="color:var(--ice2);font-weight:500;">2026</span>
+      APEX<br/><span class="neon">AI Bootcamp</span>
     </h1>
-    <p class="tag reveal">Your Skills. <em>Amplified.</em></p>
-    <div class="terminal reveal">
-      <div class="line"><span class="prompt">&gt;</span> init apex_bootcamp --year 2026</div>
-      <div class="line"><span class="prompt">when:</span> <span class="val">13–14 June 2026 · 10:00 – 17:00</span></div>
-      <div class="line"><span class="prompt">who:</span>  <span class="val">Youths 16–30 · every industry · zero experience ok</span></div>
-      <div class="line"><span class="prompt">what:</span> <span class="val">AI tools · content · cybersecurity · entrepreneurship</span></div>
-      <div class="line"><span class="prompt">why:</span>  <span class="val">85M jobs displaced · 97M new roles · pick your side<span class="cursor-blink"></span></span></div>
+    <p class="sub reveal">Your Skills. <em>Amplified.</em></p>
+    <div class="console reveal">
+      <div class="ln"><span class="p">&gt;</span> <span class="v">apex.init( bootcamp_2026 )</span></div>
+      <div class="ln"><span class="p">DATE:</span> <span class="v">13–14 June 2026 · 10:00–17:00</span></div>
+      <div class="ln"><span class="p">WHO:</span> <span class="v">Youths 16–30 · every industry · zero XP needed</span></div>
+      <div class="ln"><span class="p">TRACKS:</span> <span class="v">AI Tools · Content · Cybersecurity · Entrepreneurship</span></div>
+      <div class="ln"><span class="p">STATUS:</span> <span class="v">85M jobs displaced · 97M new roles · pick your side<span class="cursor"></span></span></div>
     </div>
     <div class="cta-row reveal">
-      <a href="#closing" class="btn-cta">Reserve Your Slot</a>
-      <a href="#tracks" class="btn-outline">Explore Tracks ↓</a>
+      <a href="#closing" class="hud-btn">Reserve Your Slot</a>
+      <a href="#tracks" class="hud-btn outline">Explore Tracks</a>
     </div>
-    <div class="emoji-row reveal">
+    <div class="emoji-float">
       <span>🤖</span><span>🎬</span><span>🛡️</span><span>💡</span><span>🚀</span>
     </div>
   </div>
 </section>
 
-<section id="picture">
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="num">01 / THE BIG PICTURE</span>
-      <h2>AI Is Not Coming for Your Job.<br/><em>Someone Who Knows AI Might Be.</em></h2>
-      <p class="lede">Two days, four tracks, one outcome: a youth who leaves more capable, more confident, and more connected than when they arrived.</p>
+<section id="mission" class="zone">
+  <div class="wrap">
+    <div class="zone-label reveal">01 // The Mission</div>
+    <h2 class="reveal">AI won't replace you.<br/>Someone who <em>uses AI</em> might.</h2>
+    <p class="reveal" style="max-width:680px;margin-top:16px;">The World Economic Forum estimates 85 million jobs displaced, 97 million new roles emerging. The gap comes down to who learned next-gen skills first. This bootcamp puts every youth on the right side.</p>
+    <div class="stats-bar reveal">
+      <div class="st"><div class="num cy" data-count="85" data-suffix="M">0</div><div class="lbl">Jobs displaced by AI</div></div>
+      <div class="st"><div class="num pk" data-count="97" data-suffix="M">0</div><div class="lbl">New roles emerging</div></div>
+      <div class="st"><div class="num gn" data-count="250" data-suffix="B+">0</div><div class="lbl">Creator economy USD</div></div>
+      <div class="st"><div class="num or" data-count="4" data-suffix="M">0</div><div class="lbl">Unfilled cyber roles</div></div>
     </div>
-    <div class="stats reveal">
-      <div class="stat"><div class="big cy" data-count="85" data-suffix="M">0</div><div class="label">Jobs displaced by AI by 2026 (WEF)</div></div>
-      <div class="stat"><div class="big mg" data-count="97" data-suffix="M">0</div><div class="label">New roles emerging in the same window</div></div>
-      <div class="stat"><div class="big lm" data-count="250" data-suffix="B+">0</div><div class="label">Creator economy in USD, and still growing</div></div>
-      <div class="stat"><div class="big or" data-count="4" data-suffix="M">0</div><div class="label">Unfilled cybersecurity roles globally</div></div>
-    </div>
-    <div class="basics reveal">
-      <div><div class="k">📅 Dates</div><div class="v">13–14 June 2026<br/>10:00 – 17:00</div></div>
-      <div><div class="k">👥 Who It's For</div><div class="v">Youths 16–30 from every industry — tech, arts, health, business, education, media</div></div>
-      <div><div class="k">🎯 Approach</div><div class="v">Learn by doing: AI labs, live challenges, team sprints, mentor clinics</div></div>
-      <div><div class="k">🏆 Outcomes</div><div class="v">Real skills, portfolio-worthy outputs, industry contacts, a head start</div></div>
+    <div class="info-blocks reveal">
+      <div class="ib"><div class="k">📅 Dates</div><div class="val">13–14 June 2026 · 10:00–17:00</div></div>
+      <div class="ib"><div class="k">👥 Who</div><div class="val">Youths 16–30 · every industry</div></div>
+      <div class="ib"><div class="k">🎯 How</div><div class="val">AI labs · live challenges · team sprints</div></div>
+      <div class="ib"><div class="k">🏆 Output</div><div class="val">Real skills · portfolio pieces · industry contacts</div></div>
     </div>
   </div>
 </section>
 
-<section id="tracks">
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="num">02 / FOUR TRACKS</span>
-      <h2>Pick Your Lens.<br/>Ship Together.</h2>
-      <p class="lede">Every team is mixed-industry. Every participant picks one track. Tracks converge in shared challenges — the creator, the hacker, the builder, and the entrepreneur each bring something essential.</p>
+<section id="tracks" class="zone">
+  <div class="wrap">
+    <div class="zone-label reveal">02 // Select Your Track</div>
+    <h2 class="reveal">Four Tracks. One Team.<br/><em>Zero Silos.</em></h2>
+    <p class="reveal" style="max-width:620px;margin-top:12px;">Mixed-industry teams, each member picks a track. Tracks converge in shared challenges — every lens finds something different.</p>
+    <div class="track-grid">
+      <div class="track-card t1 reveal"><span class="badge">TRACK 01</span><span class="ico">🤖</span><h3>AI Tools &amp; Future Work</h3><p>Master AI tools reshaping every industry. Build faster, think smarter, earn more.</p></div>
+      <div class="track-card t2 reveal"><span class="badge">TRACK 02</span><span class="ico">🎬</span><h3>Content Creator</h3><p>AI-powered content, personal brand, monetisation, platform mastery.</p></div>
+      <div class="track-card t3 reveal"><span class="badge">TRACK 03</span><span class="ico">🛡️</span><h3>Cybersecurity &amp; Bug Bounty</h3><p>Ethical hacking, penetration basics, vulnerability thinking — and how to get paid.</p></div>
+      <div class="track-card t4 reveal"><span class="badge">TRACK 04</span><span class="ico">🚀</span><h3>AI Entrepreneurship</h3><p>Spot gaps, build fast with AI, pitch your idea, think like a founder.</p></div>
     </div>
-    <div class="tracks">
-      <div class="track t1 reveal">
-        <span class="icon">🤖</span>
-        <div class="tnum">Track 01</div>
-        <h3>AI Tools &amp; Future Work</h3>
-        <p>Master the AI tools reshaping every industry. Build faster, think smarter, earn more.</p>
-      </div>
-      <div class="track t2 reveal">
-        <span class="icon">🎬</span>
-        <div class="tnum">Track 02</div>
-        <h3>Content Creator &amp; Influencer</h3>
-        <p>AI-powered content, personal brand, monetisation, and platform mastery.</p>
-      </div>
-      <div class="track t3 reveal">
-        <span class="icon">🛡️</span>
-        <div class="tnum">Track 03</div>
-        <h3>Cybersecurity &amp; Bug Bounty</h3>
-        <p>Ethical hacking, penetration basics, vulnerability thinking — and how to get paid for it.</p>
-      </div>
-      <div class="track t4 reveal">
-        <span class="icon">🚀</span>
-        <div class="tnum">Track 04</div>
-        <h3>AI Entrepreneurship</h3>
-        <p>Spot gaps, build fast with AI, pitch your idea, and think like a founder.</p>
-      </div>
-    </div>
-    <div class="gel reveal">
-      <strong>THE GEL FACTOR —</strong> Each track is not a silo. It's a lens. No single track wins alone. The collisions are the point.
-    </div>
+    <div class="gel-box reveal"><strong>GEL FACTOR:</strong> Each track is a lens, not a silo. No single track wins alone. The collisions are the point.</div>
   </div>
 </section>
 
-<section id="schedule">
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="num">03 / PROGRAMME</span>
-      <h2>Two Days.<br/>Zero Filler.</h2>
-      <p class="lede">Every hour is engineered for output. Keynotes, labs, live challenges, mentor clinics, and showcases — stacked back-to-back.</p>
+<section id="schedule" class="zone">
+  <div class="wrap">
+    <div class="zone-label reveal">03 // Programme</div>
+    <h2 class="reveal">Two Days. Zero Filler.</h2>
+    <div class="tabs-row reveal">
+      <button class="tab-btn active" data-day="1">Day 1 · Fri 13 Jun</button>
+      <button class="tab-btn" data-day="2">Day 2 · Sat 14 Jun</button>
     </div>
-    <div class="tabs reveal">
-      <button class="tab active" data-day="1">Day 1 · Fri 13 Jun</button>
-      <button class="tab" data-day="2">Day 2 · Sat 14 Jun</button>
-    </div>
-    <div class="day active" data-day="1">
-      <h3>Day 1 Theme</h3>
-      <div class="theme">"AI Is the New Literacy" — understand the landscape, discover your superpower.</div>
-      <div class="sched">
-        <div class="row"><div class="t">10:00–10:30</div><div><div class="s-title">Welcome &amp; The AI World Right Now</div><div class="s-desc">Live demo of AI tools most people don't know exist. The job market truth in 5 charts.</div></div><div class="fmt">Keynote</div><div class="rel">All tracks</div></div>
-        <div class="row"><div class="t">10:30–11:15</div><div><div class="s-title">Team Formation + Track Selection</div><div class="s-desc">Teams of 4–5, intentionally mixed industries. Names, roles, track focus.</div></div><div class="fmt">Activity</div><div class="rel">All tracks</div></div>
-        <div class="row"><div class="t">11:15–12:15</div><div><div class="s-title">AI Tools Masterclass</div><div class="s-desc">Hands-on with 8 game-changing AI tools. Race to complete real tasks fastest.</div></div><div class="fmt hot">Lab</div><div class="rel">All tracks</div></div>
-        <div class="row"><div class="t">12:15–13:15</div><div><div class="s-title">Lunch + Mentor Clinic #1</div><div class="s-desc">6 mentor tables, each a different industry. Rotate and ask anything.</div></div><div class="fmt">Clinic</div><div class="rel">All tracks</div></div>
-        <div class="row"><div class="t">13:15–14:15</div><div><div class="s-title">Track Deep-Dives (Parallel)</div><div class="s-desc">Each track runs its first specialist session. See Track Deep-Dives below.</div></div><div class="fmt">Workshop ×4</div><div class="rel">By track</div></div>
-        <div class="row"><div class="t">14:15–15:15</div><div><div class="s-title">Cross-Track Challenge #1: The AI Audit</div><div class="s-desc">Teams audit a fictional company's AI readiness. Every lens finds something different.</div></div><div class="fmt hot">Team challenge</div><div class="rel">All tracks</div></div>
-        <div class="row"><div class="t">15:15–15:30</div><div><div class="s-title">Energiser: Human vs AI Speed Round</div><div class="s-desc">Can you tell AI content from human content? Prizes for fastest.</div></div><div class="fmt">Game</div><div class="rel">All tracks</div></div>
-        <div class="row"><div class="t">15:30–16:15</div><div><div class="s-title">Panel: Jobs of 2030 — Straight Talk</div><div class="s-desc">5 practitioners on what AI has changed and what skills matter now.</div></div><div class="fmt">Panel + Q&amp;A</div><div class="rel">All tracks</div></div>
-        <div class="row"><div class="t">16:15–17:00</div><div><div class="s-title">Day 1 Debrief + Team Huddle</div><div class="s-desc">Teams identify their biggest insight and set their Day 2 challenge goal.</div></div><div class="fmt">Reflection</div><div class="rel">All tracks</div></div>
+    <div class="day-panel active" data-day="1">
+      <div class="day-theme">"AI Is the New Literacy" — understand the landscape, discover your superpower.</div>
+      <div class="quest-log">
+        <div class="quest"><div class="time">10:00</div><div><div class="title">Welcome &amp; The AI World Right Now</div><div class="desc">Live demo of AI tools most people don't know. Job market truth in 5 charts.</div></div><div class="tag">Keynote</div></div>
+        <div class="quest"><div class="time">10:30</div><div><div class="title">Team Formation + Track Selection</div><div class="desc">Teams of 4–5, mixed industries. Names, roles, track focus assigned.</div></div><div class="tag">Activity</div></div>
+        <div class="quest"><div class="time">11:15</div><div><div class="title">AI Tools Masterclass</div><div class="desc">Hands-on with 8 AI tools. Race to complete real tasks fastest.</div></div><div class="tag hot">Lab</div></div>
+        <div class="quest"><div class="time">12:15</div><div><div class="title">Lunch + Mentor Clinic #1</div><div class="desc">6 mentor tables, each a different industry. Rotate and ask anything.</div></div><div class="tag">Clinic</div></div>
+        <div class="quest"><div class="time">13:15</div><div><div class="title">Track Deep-Dives (Parallel)</div><div class="desc">Each track runs its first specialist session simultaneously.</div></div><div class="tag">Workshop ×4</div></div>
+        <div class="quest"><div class="time">14:15</div><div><div class="title">Cross-Track #1: The AI Audit</div><div class="desc">Teams audit a fictional company's AI readiness. Every lens finds something different.</div></div><div class="tag hot">Team Challenge</div></div>
+        <div class="quest"><div class="time">15:15</div><div><div class="title">Human vs AI Speed Round</div><div class="desc">Can you tell AI content from human? Prizes for fastest.</div></div><div class="tag">Game</div></div>
+        <div class="quest"><div class="time">15:30</div><div><div class="title">Panel: Jobs of 2030</div><div class="desc">5 practitioners on what AI changed and what skills matter now.</div></div><div class="tag">Panel</div></div>
+        <div class="quest"><div class="time">16:15</div><div><div class="title">Day 1 Debrief + Huddle</div><div class="desc">Teams ID their biggest insight. Set Day 2 challenge goal.</div></div><div class="tag">Reflect</div></div>
       </div>
     </div>
-    <div class="day" data-day="2">
-      <h3>Day 2 Theme</h3>
-      <div class="theme">"Build, Hack, Create, Launch" — show what you can do.</div>
-      <div class="sched">
-        <div class="row"><div class="t">10:00–10:30</div><div><div class="s-title">Day 2 Fire-Starter</div><div class="s-desc">Energy warm-up. Today's challenge brief revealed. Scoring rubric explained.</div></div><div class="fmt">Plenary</div><div class="rel">All tracks</div></div>
-        <div class="row"><div class="t">10:30–12:15</div><div><div class="s-title">🔥 THE BIG BUILD — Parallel Track Challenges</div><div class="s-desc">Each track runs its flagship challenge. Mentor clinics open in parallel.</div></div><div class="fmt hot">Live challenge</div><div class="rel">By track</div></div>
-        <div class="row"><div class="t">12:15–13:15</div><div><div class="s-title">Lunch + Mentor Clinic #2</div><div class="s-desc">Last chance to consult mentors before final presentations.</div></div><div class="fmt">Clinic</div><div class="rel">All tracks</div></div>
-        <div class="row"><div class="t">13:15–14:00</div><div><div class="s-title">Cross-Track Challenge #2: The Launch Pad</div><div class="s-desc">45 minutes to combine track outputs into one unified pitch.</div></div><div class="fmt hot">Team sprint</div><div class="rel">All tracks</div></div>
-        <div class="row"><div class="t">14:00–14:45</div><div><div class="s-title">Bug Bounty Masterclass</div><div class="s-desc">How ethical hackers earn real money. First payout stories. Your roadmap from zero.</div></div><div class="fmt">Expert</div><div class="rel">All / Cyber</div></div>
-        <div class="row"><div class="t">14:45–15:00</div><div><div class="s-title">Energiser: AI Talent Show</div><div class="s-desc">60-second AI-generated flex — funniest, most creative, most useful. Crowd votes.</div></div><div class="fmt">Showcase</div><div class="rel">All tracks</div></div>
-        <div class="row"><div class="t">15:00–16:00</div><div><div class="s-title">Final Presentations &amp; Pitches</div><div class="s-desc">Teams present Launch Pad outputs. Industry judges score on impact, creativity, collaboration.</div></div><div class="fmt hot">Showcase</div><div class="rel">All tracks</div></div>
-        <div class="row"><div class="t">16:00–16:30</div><div><div class="s-title">Awards Ceremony</div><div class="s-desc">7 awards. Every team gets recognised for something.</div></div><div class="fmt">Celebration</div><div class="rel">All tracks</div></div>
-        <div class="row"><div class="t">16:30–17:00</div><div><div class="s-title">Closing: Your Next 30 Days</div><div class="s-desc">Concrete next steps. Community access. Alumni network. Certificates.</div></div><div class="fmt">Plenary</div><div class="rel">All tracks</div></div>
+    <div class="day-panel" data-day="2">
+      <div class="day-theme">"Build, Hack, Create, Launch" — show what you can do.</div>
+      <div class="quest-log">
+        <div class="quest"><div class="time">10:00</div><div><div class="title">Day 2 Fire-Starter</div><div class="desc">Energy warm-up. Challenge brief revealed. Scoring rubric explained.</div></div><div class="tag">Plenary</div></div>
+        <div class="quest"><div class="time">10:30</div><div><div class="title">🔥 THE BIG BUILD</div><div class="desc">Each track runs its flagship challenge. Mentor clinics open in parallel.</div></div><div class="tag hot">Live Challenge</div></div>
+        <div class="quest"><div class="time">12:15</div><div><div class="title">Lunch + Mentor Clinic #2</div><div class="desc">Last chance to consult mentors before final presentations.</div></div><div class="tag">Clinic</div></div>
+        <div class="quest"><div class="time">13:15</div><div><div class="title">Cross-Track #2: The Launch Pad</div><div class="desc">45 min to combine track outputs into one unified pitch.</div></div><div class="tag hot">Team Sprint</div></div>
+        <div class="quest"><div class="time">14:00</div><div><div class="title">Bug Bounty Masterclass</div><div class="desc">How ethical hackers earn real money. Your roadmap from zero to first payout.</div></div><div class="tag">Expert</div></div>
+        <div class="quest"><div class="time">14:45</div><div><div class="title">AI Talent Show</div><div class="desc">60-sec AI-generated flex. Funniest, most creative, most useful. Crowd votes.</div></div><div class="tag">Showcase</div></div>
+        <div class="quest"><div class="time">15:00</div><div><div class="title">Final Pitches</div><div class="desc">Teams present Launch Pad outputs. Industry judges score impact, creativity, collab.</div></div><div class="tag hot">Showcase</div></div>
+        <div class="quest"><div class="time">16:00</div><div><div class="title">Awards Ceremony</div><div class="desc">7 awards. Every team gets recognised for something.</div></div><div class="tag">Celebration</div></div>
+        <div class="quest"><div class="time">16:30</div><div><div class="title">Your Next 30 Days</div><div class="desc">Concrete next steps. Community access. Alumni network. Certificates.</div></div><div class="tag">Plenary</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="deep">
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="num">04 / TRACK DEEP-DIVES</span>
-      <h2>What You Actually Build.</h2>
-      <p class="lede">Day 1 deep-dives set the foundation. Day 2 big builds produce portfolio-worthy outputs. Mentor clinics bridge both days.</p>
-    </div>
+<section id="deep" class="zone">
+  <div class="wrap">
+    <div class="zone-label reveal">04 // Track Intel</div>
+    <h2 class="reveal">What You Actually Build.</h2>
+    <div class="deep-stack">
 
-    <div class="deep">
-      <div class="deep-card t1 reveal">
-        <div class="head">
-          <span class="icon">🤖</span>
-          <div>
-            <div class="tnum">Track 01</div>
-            <h3>AI Tools &amp; Future Work</h3>
+      <div class="deep-block t1 reveal">
+        <div class="db-head"><span class="ico">🤖</span><div><div class="tnum">TRACK 01</div><h3>AI Tools &amp; Future Work</h3></div></div>
+        <div class="db-body">
+          <p>Discover, evaluate, and apply AI tools to your own field — whatever that field is.</p>
+          <div class="split">
+            <div class="split-col"><h4>Day 1: AI Tools Lab</h4><ul><li>8 tools: ChatGPT, Claude, Perplexity, Midjourney, ElevenLabs, Notion AI, Gamma + surprise</li><li>5 real work tasks using only AI — timed sprint</li><li>ID which tools matter for YOUR industry</li><li>Prompt engineering for extraordinary results</li></ul></div>
+            <div class="split-col"><h4>Day 2: Workflow Challenge</h4><ul><li>Build a complete AI-powered workflow for a real problem</li><li>Produce a 1-page AI Transformation Playbook</li><li>Scored: creativity, practicality, clarity to non-tech audiences</li></ul></div>
           </div>
-        </div>
-        <div class="body">
-          <p>The AI tools landscape moves faster than any curriculum can keep up. This track gives you a structured way to discover, evaluate, and apply AI tools to your own field — whatever that field is.</p>
-          <div class="blocks">
-            <div class="block">
-              <h4>Day 1 · AI Tools Lab</h4>
-              <ul>
-                <li>Explore 8 AI tools: ChatGPT, Claude, Perplexity, Midjourney, ElevenLabs, Notion AI, Gamma, + 1 surprise</li>
-                <li>Complete 5 real work tasks using only AI — timed sprint</li>
-                <li>Identify which tools matter for YOUR industry</li>
-                <li>Intro to prompt engineering for extraordinary results</li>
-              </ul>
-            </div>
-            <div class="block">
-              <h4>Day 2 · AI Workflow Challenge</h4>
-              <ul>
-                <li>Build a complete AI-powered workflow for a real problem</li>
-                <li>Produce a 1-page 'AI Transformation Playbook'</li>
-                <li>Scored on creativity, practicality, clarity to non-technical audiences</li>
-              </ul>
-            </div>
-          </div>
-          <div class="paths">
-            <span class="k">Career Pathways</span>
-            AI Prompt Engineer · AI Product Manager · Automation Consultant · Operations Analyst · AI Trainer · Every job that uses AI tools (i.e., most of them by 2030)
-          </div>
+          <div class="paths-line"><em>Career Paths</em>AI Prompt Engineer · AI Product Manager · Automation Consultant · Operations Analyst · AI Trainer</div>
         </div>
       </div>
 
-      <div class="deep-card t2 reveal">
-        <div class="head">
-          <span class="icon">🎬</span>
-          <div>
-            <div class="tnum">Track 02</div>
-            <h3>Content Creator &amp; Influencer</h3>
+      <div class="deep-block t2 reveal">
+        <div class="db-head"><span class="ico">🎬</span><div><div class="tnum">TRACK 02</div><h3>Content Creator &amp; Influencer</h3></div></div>
+        <div class="db-body">
+          <p>Create like a studio, monetise like a business, protect yourself like a pro. The $250B+ creator economy powered by AI.</p>
+          <div class="split">
+            <div class="split-col"><h4>Day 1: Creator Toolkit</h4><ul><li>AI stack: CapCut AI, Canva AI, ChatGPT, ElevenLabs, Descript, Ideogram</li><li>Short-form science: what goes viral in 2026</li><li>Brand identity sprint: niche, voice, pillars in 30 min</li><li>Platform safety: shadowbans, AI disclosure, protection</li></ul></div>
+            <div class="split-col"><h4>Day 2: 60-Sec Video Challenge</h4><ul><li>Topic: "The AI skill that matters most in my industry"</li><li>AI-assisted: script, voiceover, visuals, subtitles, thumb</li><li>Peer review + mentor feedback before showcase</li><li>Best video at awards — winner gets shoutout package</li></ul></div>
           </div>
-        </div>
-        <div class="body">
-          <p>The creator economy is worth over $250B and growing. AI has fundamentally changed what one person with a phone can produce. Create like a studio, monetise like a business, protect yourself like a pro.</p>
-          <div class="blocks">
-            <div class="block">
-              <h4>Day 1 · Creator Toolkit Unlocked</h4>
-              <ul>
-                <li>AI stack walkthrough: CapCut AI, Canva AI, ChatGPT, ElevenLabs, Descript, Ideogram</li>
-                <li>Short-form science: what makes content go viral in 2026</li>
-                <li>Brand identity sprint: niche, voice, pillars in 30 minutes</li>
-                <li>Platform safety: shadowbans, AI disclosure, account protection</li>
-              </ul>
-            </div>
-            <div class="block">
-              <h4>Day 2 · 60-Sec AI Video Challenge</h4>
-              <ul>
-                <li>Topic: 'The AI skill that will matter most in my industry'</li>
-                <li>Fully AI-assisted: script, voiceover, visuals, subtitles, thumbnail</li>
-                <li>Peer review + mentor feedback before showcase</li>
-                <li>Best video plays at awards — winner gets social shoutout package</li>
-              </ul>
-            </div>
-          </div>
-          <div class="monet">
-            <div><span class="ico">💰</span><div class="ttl">Brand Deals</div><p>Approach brands, set rates, avoid scams — even with a small audience.</p></div>
-            <div><span class="ico">📦</span><div class="ttl">Digital Products</div><p>Build courses, templates, presets using AI 10× faster.</p></div>
-            <div><span class="ico">🔗</span><div class="ttl">Affiliate</div><p>Ethical links, disclosure, audience trust.</p></div>
-            <div><span class="ico">📊</span><div class="ttl">Analytics</div><p>Read platform data. Know which metrics actually matter.</p></div>
-          </div>
-          <div class="paths">
-            <span class="k">Career Pathways</span>
-            Full-time Creator · Brand Partnerships Manager · Social Media Strategist · Digital Marketing Lead · Community Manager · Creative Director · UGC Creator
-          </div>
+          <div class="monet-grid"><div><span class="ic">💰</span><div class="t">Brand Deals</div><p>Set rates, avoid scams, even with a small audience.</p></div><div><span class="ic">📦</span><div class="t">Digital Products</div><p>Courses, templates, presets — AI makes them 10× faster.</p></div><div><span class="ic">🔗</span><div class="t">Affiliate</div><p>Ethical links, disclosure, audience trust.</p></div><div><span class="ic">📊</span><div class="t">Analytics</div><p>Which metrics actually matter for growth.</p></div></div>
+          <div class="paths-line"><em>Career Paths</em>Full-time Creator · Brand Partnerships · Social Media Strategist · Digital Marketing · Community Manager · UGC Creator</div>
         </div>
       </div>
 
-      <div class="deep-card t3 reveal">
-        <div class="head">
-          <span class="icon">🛡️</span>
-          <div>
-            <div class="tnum">Track 03</div>
-            <h3>Cybersecurity &amp; Bug Bounty</h3>
+      <div class="deep-block t3 reveal">
+        <div class="db-head"><span class="ico">🛡️</span><div><div class="tnum">TRACK 03</div><h3>Cybersecurity &amp; Bug Bounty</h3></div></div>
+        <div class="db-body">
+          <p>4M+ unfilled cyber roles globally. Ethical hacking lets you earn before you even have a job — via bug bounties.</p>
+          <div class="split">
+            <div class="split-col"><h4>Day 1: How Hackers Think</h4><ul><li>Hacker mindset: curiosity, persistence, lateral thinking</li><li>OSINT lab: what can you find using only public info?</li><li>Social engineering &amp; phishing: how attackers manipulate</li><li>AI in cybersecurity — attackers AND defenders</li></ul></div>
+            <div class="split-col"><h4>Day 2: Capture the Flag</h4><ul><li>Beginner-friendly CTF in sandboxed environment</li><li>Tiered: Rookie · Challenger · Elite</li><li>5 scenario tracks (below)</li><li>Safe to fail, safe to learn</li></ul></div>
           </div>
-        </div>
-        <div class="body">
-          <p>Cybersecurity has a global shortage of 4M+ professionals. Unlike most careers, ethical hacking lets you start earning <em>before</em> you have a job — via bug bounties that pay anyone who finds real flaws.</p>
-          <div class="blocks">
-            <div class="block">
-              <h4>Day 1 · How Hackers Think</h4>
-              <ul>
-                <li>The hacker mindset: curiosity, persistence, lateral thinking</li>
-                <li>OSINT lab: what can you find using only public info?</li>
-                <li>Social engineering &amp; phishing: how attackers manipulate people</li>
-                <li>AI in cybersecurity — used by attackers AND defenders</li>
-              </ul>
-            </div>
-            <div class="block">
-              <h4>Day 2 · Capture the Flag</h4>
-              <ul>
-                <li>Beginner-friendly CTF in a sandboxed environment</li>
-                <li>Tiered: Rookie · Challenger · Elite</li>
-                <li>5 scenario tracks to choose from (below)</li>
-                <li>No real systems at risk — safe to fail, safe to learn</li>
-              </ul>
-            </div>
-          </div>
-          <div class="ctfs">
-            <div class="ctf"><span class="e">🔐</span><div class="n">The Breach</div><p>A small business was hacked. Find the entry point.</p></div>
-            <div class="ctf"><span class="e">📧</span><div class="n">The Phish</div><p>Trace a sophisticated email attack chain.</p></div>
-            <div class="ctf"><span class="e">📱</span><div class="n">The Takeover</div><p>An influencer's account was hijacked. Recover and trace.</p></div>
-            <div class="ctf"><span class="e">🏥</span><div class="n">The Data Leak</div><p>Patient records exposed. Contain and report.</p></div>
-            <div class="ctf"><span class="e">💸</span><div class="n">The Scam</div><p>A startup's payment system was exploited. Trace and fix.</p></div>
-          </div>
-          <div class="bounty">
-            <table>
-              <thead><tr><th>Step</th><th>Platform</th><th>Skill Level</th><th>Earning Potential</th></tr></thead>
-              <tbody>
-                <tr><td>Start here</td><td>TryHackMe / HackTheBox</td><td>Zero experience</td><td>Practice + reputation</td></tr>
-                <tr><td>Get recognised</td><td>HackerOne VDP</td><td>Beginner-friendly</td><td>Hall of fame credits</td></tr>
-                <tr><td>First payout</td><td>Bugcrowd public</td><td>Basic web security</td><td>$50 – $500 / bug</td></tr>
-                <tr><td>Level up</td><td>Private invitations</td><td>Intermediate</td><td>$500 – $10,000 / bug</td></tr>
-                <tr><td>Elite</td><td>Google · Meta · Apple</td><td>Advanced</td><td>$10,000 – $100,000+</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="paths">
-            <span class="k">Career Pathways</span>
-            Penetration Tester · Bug Bounty Hunter · Security Analyst · Threat Intelligence Analyst · Digital Forensics · Cyber Risk Consultant · AI Security Researcher
-          </div>
+          <div class="ctf-grid"><div class="ctf-card"><span class="e">🔐</span><div class="n">The Breach</div><p>Find the entry point.</p></div><div class="ctf-card"><span class="e">📧</span><div class="n">The Phish</div><p>Trace the attack chain.</p></div><div class="ctf-card"><span class="e">📱</span><div class="n">The Takeover</div><p>Recover a hijacked account.</p></div><div class="ctf-card"><span class="e">🏥</span><div class="n">The Data Leak</div><p>Contain and report.</p></div><div class="ctf-card"><span class="e">💸</span><div class="n">The Scam</div><p>Trace and fix.</p></div></div>
+          <div class="bounty-tbl"><table><thead><tr><th>Step</th><th>Platform</th><th>Level</th><th>Earnings</th></tr></thead><tbody><tr><td>Start</td><td>TryHackMe / HackTheBox</td><td>Zero XP</td><td>Practice + rep</td></tr><tr><td>Recognised</td><td>HackerOne VDP</td><td>Beginner</td><td>Hall of fame</td></tr><tr><td>First Payout</td><td>Bugcrowd</td><td>Basic web</td><td>$50–$500</td></tr><tr><td>Level Up</td><td>Private programmes</td><td>Intermediate</td><td>$500–$10K</td></tr><tr><td>Elite</td><td>Google · Meta · Apple</td><td>Advanced</td><td>$10K–$100K+</td></tr></tbody></table></div>
+          <div class="paths-line"><em>Career Paths</em>Pen Tester · Bug Bounty Hunter · Security Analyst · Threat Intel · Digital Forensics · Cyber Risk · AI Security</div>
         </div>
       </div>
 
-      <div class="deep-card t4 reveal">
-        <div class="head">
-          <span class="icon">🚀</span>
-          <div>
-            <div class="tnum">Track 04</div>
-            <h3>AI Entrepreneurship &amp; Innovation</h3>
+      <div class="deep-block t4 reveal">
+        <div class="db-head"><span class="ico">🚀</span><div><div class="tnum">TRACK 04</div><h3>AI Entrepreneurship</h3></div></div>
+        <div class="db-body">
+          <p>Fastest-growing startups = 1–2 people + AI tools. Build things, solve problems, turn ideas real. No code required.</p>
+          <div class="split">
+            <div class="split-col"><h4>Day 1: Startup Toolkit</h4><ul><li>New startup stack: MVP in 48 hours with AI</li><li>Problem-spotting: find a pain point in your industry</li><li>Business model speed-run for AI-first products</li><li>No-code builders: Bubble, Glide, Zapier, Make</li></ul></div>
+            <div class="split-col"><h4>Day 2: Startup Sprint</h4><ul><li>Build a working prototype or hi-fi mockup</li><li>3-slide pitch: Problem · Solution · Why Now</li><li>Pitch to mentors + peers at final showcase</li><li>Winner: intro to partner accelerator</li></ul></div>
           </div>
-        </div>
-        <div class="body">
-          <p>The fastest-growing startups right now are one or two people with AI tools — not a hundred engineers. Build things, solve problems, turn ideas into something real. No coding required.</p>
-          <div class="blocks">
-            <div class="block">
-              <h4>Day 1 · AI Startup Toolkit</h4>
-              <ul>
-                <li>The new startup stack: MVP in 48 hours with AI</li>
-                <li>Problem-spotting: find a real pain point in your industry</li>
-                <li>Business model speed-run: what works for AI-first products</li>
-                <li>No-code AI builders: Bubble, Glide, Zapier, Make</li>
-              </ul>
-            </div>
-            <div class="block">
-              <h4>Day 2 · AI Startup Sprint</h4>
-              <ul>
-                <li>Build a working prototype (or hi-fi mockup) of an AI product</li>
-                <li>3-slide pitch: Problem · AI-powered solution · Why now</li>
-                <li>Pitch to a panel of mentors and peers in the final showcase</li>
-                <li>Winning pitch: intro to a partner accelerator / incubator</li>
-              </ul>
-            </div>
-          </div>
-          <div class="paths">
-            <span class="k">Career Pathways</span>
-            Startup Founder · Product Manager · Innovation Lead · No-Code Developer · Venture Analyst · AI Consultant · Social Entrepreneur · Intrapreneur
-          </div>
+          <div class="paths-line"><em>Career Paths</em>Founder · Product Manager · Innovation Lead · No-Code Dev · Venture Analyst · AI Consultant · Intrapreneur</div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<section id="mentors">
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="num">05 / MENTOR CLINICS</span>
-      <h2>Practitioners,<br/>Not Academics.</h2>
-      <p class="lede">Two dedicated clinic hours across both days. Mentors are real practitioners with lived experience. Any participant can walk up to any mentor — cross-track collisions are exactly the point.</p>
-    </div>
-    <div class="mentors">
-      <div class="mentor reveal"><span class="ico">🤖</span><h4>AI Practitioner</h4><p>Actively using AI tools in a professional context — any industry.</p></div>
-      <div class="mentor reveal"><span class="ico">🎬</span><h4>Content Creator</h4><p>Creator with a real following who uses AI in their workflow.</p></div>
-      <div class="mentor reveal"><span class="ico">🛡️</span><h4>Ethical Hacker</h4><p>Verifiable hacking background and payout history to share authentically.</p></div>
-      <div class="mentor reveal"><span class="ico">🚀</span><h4>Startup Founder</h4><p>Has built something with AI tools — ideally recently.</p></div>
-      <div class="mentor reveal"><span class="ico">💼</span><h4>HR / Talent Leader</h4><p>Knows what employers are actually looking for in 2026 and beyond.</p></div>
-      <div class="mentor reveal"><span class="ico">⚖️</span><h4>AI Ethics / Policy</h4><p>Responsible AI use, data rights, the regulatory landscape.</p></div>
+<section id="mentors" class="zone">
+  <div class="wrap">
+    <div class="zone-label reveal">05 // Mentor Network</div>
+    <h2 class="reveal">Practitioners. <em>Not Academics.</em></h2>
+    <p class="reveal" style="max-width:600px;margin-top:12px;">Two clinic hours across both days. Walk up to any mentor regardless of track. Cross-track collisions encouraged.</p>
+    <div class="mentor-grid">
+      <div class="mentor-card reveal"><span class="ic">🤖</span><h4>AI Practitioner</h4><p>Actively using AI tools professionally — any industry.</p></div>
+      <div class="mentor-card reveal"><span class="ic">🎬</span><h4>Content Creator</h4><p>Real following, uses AI in their workflow.</p></div>
+      <div class="mentor-card reveal"><span class="ic">🛡️</span><h4>Ethical Hacker</h4><p>Verifiable background and payout history.</p></div>
+      <div class="mentor-card reveal"><span class="ic">🚀</span><h4>Startup Founder</h4><p>Built something with AI tools — recently.</p></div>
+      <div class="mentor-card reveal"><span class="ic">💼</span><h4>HR / Talent</h4><p>What employers actually want in 2026+.</p></div>
+      <div class="mentor-card reveal"><span class="ic">⚖️</span><h4>AI Ethics / Policy</h4><p>Responsible AI, data rights, regulations.</p></div>
     </div>
   </div>
 </section>
 
-<section id="outcomes">
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="num">06 / LEARNING OUTCOMES</span>
-      <h2>No Matter Where You Start.</h2>
-      <p class="lede">The bootcamp is calibrated for every background. Here's what participants take home, and the career impact that follows.</p>
-    </div>
-    <div class="outcomes reveal">
-      <table>
-        <thead><tr><th>Background</th><th>Skills Gained</th><th>Career Impact</th></tr></thead>
-        <tbody>
-          <tr><td>Tech &amp; Engineering</td><td>AI-augmented dev, security fundamentals, automation</td><td>Stand out in interviews; ship AI features faster than peers</td></tr>
-          <tr><td>Marketing &amp; Comms</td><td>AI content tools, data privacy literacy, campaign automation</td><td>Be the AI-savvy marketer every team wants</td></tr>
-          <tr><td>Content Creator</td><td>AI production stack, monetisation strategy, brand protection</td><td>Scale output 10×; earn from multiple streams</td></tr>
-          <tr><td>Healthcare &amp; Social Work</td><td>AI in care contexts, patient data security, ethical AI</td><td>Lead digital transformation in service delivery</td></tr>
-          <tr><td>Business &amp; Finance</td><td>Risk assessment, AI business models, automation ROI</td><td>Spot AI opportunities before others do</td></tr>
-          <tr><td>Education &amp; Community</td><td>AI literacy tools, digital safety, youth advocacy</td><td>Bring AI skills back to your community</td></tr>
-          <tr><td>Arts &amp; Design</td><td>Generative AI tools, IP protection, human-AI collab</td><td>Create more, faster — and own your output</td></tr>
-          <tr><td>All Participants</td><td>Prompt engineering, teamwork under pressure, pitching</td><td>Confidence to use AI in any role, any industry</td></tr>
-        </tbody>
-      </table>
+<section id="outcomes" class="zone">
+  <div class="wrap">
+    <div class="zone-label reveal">06 // Outcomes</div>
+    <h2 class="reveal">Skills by Background.</h2>
+    <div class="outcome-tbl reveal">
+      <table><thead><tr><th>Background</th><th>Skills Gained</th><th>Career Impact</th></tr></thead><tbody>
+        <tr><td>Tech &amp; Engineering</td><td>AI-augmented dev, security, automation</td><td>Ship AI features faster than peers</td></tr>
+        <tr><td>Marketing</td><td>AI content tools, privacy literacy, automation</td><td>The AI-savvy marketer every team wants</td></tr>
+        <tr><td>Content Creator</td><td>AI production stack, monetisation, brand protection</td><td>Scale 10×, earn from multiple streams</td></tr>
+        <tr><td>Healthcare</td><td>AI in care, patient data security, ethical AI</td><td>Lead digital transformation</td></tr>
+        <tr><td>Business</td><td>Risk assessment, AI models, automation ROI</td><td>Spot AI opportunities first</td></tr>
+        <tr><td>Education</td><td>AI literacy tools, digital safety, advocacy</td><td>Bring AI skills to your community</td></tr>
+        <tr><td>Arts &amp; Design</td><td>Generative AI, IP protection, human-AI collab</td><td>Create more, own your output</td></tr>
+        <tr><td>All</td><td>Prompt engineering, teamwork, pitching</td><td>Confidence to use AI in any role</td></tr>
+      </tbody></table>
     </div>
   </div>
 </section>
 
-<section id="awards">
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="num">07 / AWARDS</span>
-      <h2>Seven Awards.<br/><em>Everyone Gets Recognised.</em></h2>
-      <p class="lede">Judged by mentors and industry guests. All participants receive a digital certificate of completion. Top teams unlock priority access to internship listings and alumni community.</p>
-    </div>
-    <div class="awards">
-      <div class="award reveal"><span class="e">🥇</span><h4>Best AI Workflow</h4><p>Most impressive use of AI tools to solve a real problem — Track 1.</p></div>
-      <div class="award reveal"><span class="e">🎬</span><h4>Best Creator Content</h4><p>Most compelling 60-second AI-produced video — Track 2.</p></div>
-      <div class="award reveal"><span class="e">🔐</span><h4>Best Hack</h4><p>Most complete and creative CTF challenge solution — Track 3.</p></div>
-      <div class="award reveal"><span class="e">🚀</span><h4>Best Startup Pitch</h4><p>Most investable AI product idea — Track 4.</p></div>
-      <div class="award reveal"><span class="e">🌐</span><h4>Best Cross-Track Team</h4><p>Best combined Launch Pad pitch — any track combination.</p></div>
-      <div class="award reveal"><span class="e">💡</span><h4>Most Creative Solution</h4><p>Most unexpected, original approach to any challenge.</p></div>
-      <div class="award reveal"><span class="e">🌟</span><h4>Community Choice</h4><p>Voted by participants — the team everyone wanted on their side.</p></div>
+<section id="awards" class="zone">
+  <div class="wrap">
+    <div class="zone-label reveal">07 // Awards</div>
+    <h2 class="reveal">Seven Awards. <em>Every Team Recognised.</em></h2>
+    <div class="award-grid">
+      <div class="award-card reveal"><span class="e">🥇</span><h4>Best AI Workflow</h4><p>Most impressive AI tools solution — Track 1.</p></div>
+      <div class="award-card reveal"><span class="e">🎬</span><h4>Best Creator Content</h4><p>Most compelling 60-sec video — Track 2.</p></div>
+      <div class="award-card reveal"><span class="e">🔐</span><h4>Best Hack</h4><p>Most creative CTF solution — Track 3.</p></div>
+      <div class="award-card reveal"><span class="e">🚀</span><h4>Best Startup Pitch</h4><p>Most investable AI idea — Track 4.</p></div>
+      <div class="award-card reveal"><span class="e">🌐</span><h4>Best Cross-Track</h4><p>Best combined Launch Pad pitch.</p></div>
+      <div class="award-card reveal"><span class="e">💡</span><h4>Most Creative</h4><p>Most unexpected, original approach.</p></div>
+      <div class="award-card reveal"><span class="e">🌟</span><h4>Community Choice</h4><p>Voted by participants.</p></div>
     </div>
   </div>
 </section>
 
-<section id="pathways">
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="num">08 / POST-BOOTCAMP</span>
-      <h2>What You Take Home.</h2>
-      <p class="lede">Resources, community, and one concrete commitment. The bootcamp ends on Saturday. The momentum starts on Sunday.</p>
+<section id="pathways" class="zone">
+  <div class="wrap">
+    <div class="zone-label reveal">08 // Post-Bootcamp</div>
+    <h2 class="reveal">What You Take Home.</h2>
+    <div class="kit-grid reveal">
+      <div><div class="k">Starter</div><h4>AI Tools Kit</h4><p>20 best free AI tools by use case.</p></div>
+      <div><div class="k">Playbook</div><h4>Bug Bounty Checklist</h4><p>Step-by-step to first disclosure.</p></div>
+      <div><div class="k">Playbook</div><h4>Creator Monetisation</h4><p>One-page guide to first income.</p></div>
+      <div><div class="k">Template</div><h4>AI Startup Canvas</h4><p>Keep building your prototype.</p></div>
+      <div><div class="k">Network</div><h4>Mentor Contacts</h4><p>Direct line to practitioners.</p></div>
+      <div><div class="k">Community</div><h4>Alumni Access</h4><p>Discord/Telegram for collabs.</p></div>
     </div>
-    <div class="kit reveal">
-      <div><div class="k">▸ Starter</div><h4>AI Tools Starter Kit</h4><p>20 best free AI tools by use case.</p></div>
-      <div><div class="k">▸ Playbook</div><h4>Bug Bounty Checklist</h4><p>Step-by-step guide to your first responsible disclosure.</p></div>
-      <div><div class="k">▸ Playbook</div><h4>Creator Monetisation</h4><p>One-page guide to your first income stream.</p></div>
-      <div><div class="k">▸ Template</div><h4>AI Startup Canvas</h4><p>Keep building your Day 2 prototype.</p></div>
-      <div><div class="k">▸ Network</div><h4>Mentor Contact Cards</h4><p>Direct line to practitioners who showed up for you.</p></div>
-      <div><div class="k">▸ Community</div><h4>Alumni Discord/Telegram</h4><p>Challenges, job postings, collabs.</p></div>
-    </div>
-
-    <div class="challenge reveal">
-      <span class="num" style="color:var(--muted);">THE 30-DAY CHALLENGE</span>
-      <h3 style="margin-top:10px;">One commitment. One concrete action. Within 30 days.</h3>
+    <div class="challenge-box reveal">
+      <h3>The 30-Day Challenge</h3>
+      <p>One commitment. One concrete action. Within 30 days.</p>
       <ul>
-        <li><strong>AI Track</strong> Automate one task at work or school using an AI tool.</li>
-        <li class="mg"><strong>Creator Track</strong> Publish one piece of AI-assisted content.</li>
-        <li class="lm"><strong>Cyber Track</strong> Create a HackerOne profile and attempt one beginner challenge.</li>
-        <li class="or"><strong>Entrepreneurship</strong> Share your startup idea with one potential user and get feedback.</li>
+        <li class="cy"><strong>AI Track</strong> Automate one task at work or school using an AI tool.</li>
+        <li class="pk"><strong>Creator</strong> Publish one piece of AI-assisted content.</li>
+        <li class="gn"><strong>Cyber</strong> Create a HackerOne profile. Attempt one beginner challenge.</li>
+        <li class="or"><strong>Startup</strong> Share your idea with one potential user. Get feedback.</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section id="logistics">
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="num">09 / LOGISTICS</span>
-      <h2>Built for Output.</h2>
-      <p class="lede">Designed for hands-on building — not lecture theatres. Every table has power, every participant has tools, every track has its own room.</p>
-    </div>
-    <div class="logistics">
-      <div><div class="k">Cohort Size</div><div class="v">60–80 Participants</div><p>12–16 teams of 4–5. Minimum 30.</p></div>
-      <div><div class="k">Mentor Ratio</div><div class="v">1 Mentor / 10 Participants</div><p>2 lead facilitators + 2 support staff.</p></div>
-      <div><div class="k">Venue</div><div class="v">Plenary + 4 Breakout Rooms</div><p>Content corner with neutral backdrop and lighting.</p></div>
-      <div><div class="k">Tech</div><div class="v">WiFi · Sandboxed Lab · Loan Laptops</div><p>Projector, large display, power at every table.</p></div>
-      <div><div class="k">Equipment</div><div class="v">Ring Lights · Phone Stands · Sticky Notes</div><p>Whiteboards and markers for sprint sessions.</p></div>
-      <div><div class="k">Materials</div><div class="v">Pre-Printed Resource Kits</div><p>Team persona cards, mentor specialty cards, challenge briefs.</p></div>
+<section id="logistics" class="zone">
+  <div class="wrap">
+    <div class="zone-label reveal">09 // Logistics</div>
+    <h2 class="reveal">Built for Output.</h2>
+    <div class="logi-grid">
+      <div class="reveal"><div class="k">Cohort</div><div class="val">60–80 participants</div><p>12–16 teams of 4–5. Min 30.</p></div>
+      <div class="reveal"><div class="k">Mentors</div><div class="val">1 per 10 participants</div><p>2 lead facilitators + 2 support.</p></div>
+      <div class="reveal"><div class="k">Venue</div><div class="val">Plenary + 4 breakouts</div><p>Content corner with backdrop + lighting.</p></div>
+      <div class="reveal"><div class="k">Tech</div><div class="val">WiFi · Sandboxed lab · Loan laptops</div><p>Projector, display, power at every table.</p></div>
+      <div class="reveal"><div class="k">Equipment</div><div class="val">Ring lights · Phone stands</div><p>Sticky notes, markers, whiteboards.</p></div>
+      <div class="reveal"><div class="k">Materials</div><div class="val">Pre-printed resource kits</div><p>Team cards, mentor cards, challenge briefs.</p></div>
     </div>
   </div>
 </section>
 
-<section id="closing">
-  <div class="container">
-    <div class="reveal">
-      <span class="num" style="color:var(--muted);letter-spacing:0.3em;">10 / CLOSING</span>
-    </div>
-    <div class="quote reveal">
-      "AI won't replace you.<br/>
-      But <span class="accent">someone who uses AI</span> might."
-    </div>
-    <p class="reveal">This bootcamp exists so that someone is <em>you</em>.</p>
+<section id="closing" class="zone">
+  <div class="wrap">
+    <div class="zone-label reveal" style="justify-content:center">10 // Join</div>
+    <div class="quote reveal">"AI won't replace you.<br/>But <span class="acc">someone who uses AI</span> might."</div>
+    <p class="reveal" style="text-align:center;margin:0 auto 16px;">This bootcamp exists so that someone is <em>you</em>.</p>
     <div class="you reveal">YOU.</div>
-    <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-      <a href="mailto:hello@apex2026.sg" class="btn-cta">Reserve Your Slot</a>
-      <a href="mailto:partners@apex2026.sg" class="btn-outline">Partner With Us</a>
+    <div class="reveal" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="mailto:hello@apex2026.sg" class="hud-btn pink">Reserve Your Slot</a>
+      <a href="mailto:partners@apex2026.sg" class="hud-btn outline">Partner With Us</a>
     </div>
-    <p class="reveal" style="margin-top:40px;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);">Programme partnerships · Sponsorship · Mentor recruitment · Registration</p>
   </div>
 </section>
-</main>
 
 <footer>
-  <div class="line">APEX AI BOOTCAMP 2026 · 13–14 JUNE 2026 · YOUR SKILLS. AMPLIFIED.</div>
-  <div class="line">Partnerships · Sponsorship · Mentor Recruitment · <a href="#closing">Contact</a></div>
+  <div class="ln">APEX AI BOOTCAMP 2026 · 13–14 JUNE · YOUR SKILLS. AMPLIFIED.</div>
+  <div class="ln">Partnerships · Sponsorship · Mentors · <a href="#closing">Contact</a></div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>

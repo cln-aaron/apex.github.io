@@ -1,127 +1,88 @@
-/* APEX AI BOOTCAMP 2026 — microsite interactions */
+/* APEX 2026 — Cyberpunk × Roblox interactions */
 
-// ===== Custom cursor =====
-(function () {
-  if (window.matchMedia('(hover: none)').matches) return;
-  const dot = document.querySelector('.cursor-dot');
-  const ring = document.querySelector('.cursor-ring');
-  if (!dot || !ring) return;
-
-  let mx = window.innerWidth / 2, my = window.innerHeight / 2;
-  let rx = mx, ry = my;
-
-  window.addEventListener('mousemove', (e) => {
-    mx = e.clientX; my = e.clientY;
-    dot.style.transform = `translate(${mx}px, ${my}px) translate(-50%, -50%)`;
-  });
-
-  function tick() {
-    rx += (mx - rx) * 0.18;
-    ry += (my - ry) * 0.18;
-    ring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%)`;
-    requestAnimationFrame(tick);
+// Floating background blocks
+(function(){
+  const c=document.querySelector('.bg-blocks');
+  if(!c)return;
+  const colors=['#00fff5','#ff2e93','#39ff14','#ff6b35','#b833ff'];
+  for(let i=0;i<18;i++){
+    const b=document.createElement('div');
+    b.className='b';
+    const s=Math.random()*40+15;
+    b.style.width=s+'px';
+    b.style.height=s+'px';
+    b.style.left=Math.random()*100+'%';
+    b.style.borderColor=colors[i%colors.length];
+    b.style.animationDuration=(Math.random()*15+12)+'s';
+    b.style.animationDelay=(-Math.random()*20)+'s';
+    c.appendChild(b);
   }
-  tick();
-
-  const hoverables = 'a, button, .tab, .track, .deep-card, .award, .ctf, .mentor';
-  document.addEventListener('mouseover', (e) => {
-    if (e.target.closest(hoverables)) ring.classList.add('hover');
-  });
-  document.addEventListener('mouseout', (e) => {
-    if (e.target.closest(hoverables)) ring.classList.remove('hover');
-  });
 })();
 
-// ===== Scroll reveal =====
-(function () {
-  const els = document.querySelectorAll('.reveal');
-  if (!('IntersectionObserver' in window) || !els.length) {
-    els.forEach((el) => el.classList.add('visible'));
-    return;
-  }
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  els.forEach((el) => io.observe(el));
+// Scroll reveal
+(function(){
+  const els=document.querySelectorAll('.reveal');
+  if(!els.length)return;
+  if(!('IntersectionObserver' in window)){els.forEach(e=>e.classList.add('visible'));return;}
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(en=>{if(en.isIntersecting){en.target.classList.add('visible');io.unobserve(en.target);}});
+  },{threshold:0.1});
+  els.forEach(e=>io.observe(e));
 })();
 
-// ===== Nav active on scroll =====
-(function () {
-  const links = document.querySelectorAll('nav .links a');
-  if (!links.length) return;
-  const sections = Array.from(links)
-    .map((a) => document.querySelector(a.getAttribute('href')))
-    .filter(Boolean);
-
-  function onScroll() {
-    const y = window.scrollY + 140;
-    let idx = 0;
-    sections.forEach((s, i) => {
-      if (s.offsetTop <= y) idx = i;
-    });
-    links.forEach((a, i) => a.classList.toggle('active', i === idx));
+// Nav active on scroll
+(function(){
+  const links=document.querySelectorAll('.hud-nav .nav-links a');
+  if(!links.length)return;
+  const secs=Array.from(links).map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  function onScroll(){
+    const y=window.scrollY+140;let idx=0;
+    secs.forEach((s,i)=>{if(s.offsetTop<=y)idx=i;});
+    links.forEach((a,i)=>a.classList.toggle('active',i===idx));
   }
-  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('scroll',onScroll,{passive:true});
   onScroll();
 })();
 
-// ===== Schedule tabs =====
-(function () {
-  const tabs = document.querySelectorAll('.tab');
-  const days = document.querySelectorAll('.day');
-  tabs.forEach((t) => {
-    t.addEventListener('click', () => {
-      const tgt = t.dataset.day;
-      tabs.forEach((x) => x.classList.toggle('active', x === t));
-      days.forEach((d) => d.classList.toggle('active', d.dataset.day === tgt));
+// Schedule tabs
+(function(){
+  const tabs=document.querySelectorAll('.tab-btn');
+  const panels=document.querySelectorAll('.day-panel');
+  tabs.forEach(t=>{
+    t.addEventListener('click',()=>{
+      const d=t.dataset.day;
+      tabs.forEach(x=>x.classList.toggle('active',x===t));
+      panels.forEach(p=>p.classList.toggle('active',p.dataset.day===d));
     });
   });
 })();
 
-// ===== Count-up stats =====
-(function () {
-  const els = document.querySelectorAll('[data-count]');
-  if (!els.length) return;
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      const el = entry.target;
-      const end = parseFloat(el.dataset.count);
-      const suffix = el.dataset.suffix || '';
-      const prefix = el.dataset.prefix || '';
-      const dur = 1400;
-      const t0 = performance.now();
-      function step(t) {
-        const p = Math.min((t - t0) / dur, 1);
-        const eased = 1 - Math.pow(1 - p, 3);
-        const v = end * eased;
-        const formatted = end >= 10 ? Math.round(v).toLocaleString() : v.toFixed(0);
-        el.textContent = prefix + formatted + suffix;
-        if (p < 1) requestAnimationFrame(step);
+// Count-up stats
+(function(){
+  const els=document.querySelectorAll('[data-count]');
+  if(!els.length)return;
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(en=>{
+      if(!en.isIntersecting)return;
+      const el=en.target,end=parseFloat(el.dataset.count),suf=el.dataset.suffix||'',dur=1200,t0=performance.now();
+      function step(t){
+        const p=Math.min((t-t0)/dur,1),v=end*(1-Math.pow(1-p,3));
+        el.textContent=(end>=10?Math.round(v).toLocaleString():v.toFixed(0))+suf;
+        if(p<1)requestAnimationFrame(step);
       }
       requestAnimationFrame(step);
       io.unobserve(el);
     });
-  }, { threshold: 0.3 });
-  els.forEach((el) => io.observe(el));
+  },{threshold:0.3});
+  els.forEach(e=>io.observe(e));
 })();
 
-// ===== Hero terminal type-on =====
-(function () {
-  const lines = document.querySelectorAll('#hero .terminal .line');
-  if (!lines.length) return;
-  lines.forEach((l) => (l.style.visibility = 'hidden'));
-  let i = 0;
-  function next() {
-    if (i >= lines.length) return;
-    lines[i].style.visibility = 'visible';
-    i++;
-    setTimeout(next, 320);
-  }
-  setTimeout(next, 500);
+// Terminal type-on
+(function(){
+  const lines=document.querySelectorAll('#hero .console .ln');
+  if(!lines.length)return;
+  lines.forEach(l=>l.style.visibility='hidden');
+  let i=0;
+  function next(){if(i>=lines.length)return;lines[i].style.visibility='visible';i++;setTimeout(next,280);}
+  setTimeout(next,400);
 })();
