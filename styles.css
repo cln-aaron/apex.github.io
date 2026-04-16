@@ -120,9 +120,8 @@ em{font-style:normal;color:var(--cy)}
 .deep-block[data-expanded="true"] .db-toggle .tog-state::before{content:"Close"}
 .db-toggle .tog-icn{font-family:'Space Mono',monospace;font-size:15px;font-weight:700;line-height:1;width:12px;text-align:center;transition:transform .35s cubic-bezier(.4,0,.2,1)}
 .deep-block[data-expanded="true"] .db-toggle .tog-icn{transform:rotate(45deg)}
-.db-body-wrap{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s cubic-bezier(.4,0,.2,1)}
-.deep-block[data-expanded="true"] .db-body-wrap{grid-template-rows:1fr}
-.db-body-wrap > .db-body{min-height:0;overflow:hidden}
+.db-body-wrap{max-height:0;opacity:0;overflow:hidden;transition:max-height .55s cubic-bezier(.4,0,.2,1),opacity .35s ease}
+.deep-block[data-expanded="true"] .db-body-wrap{max-height:4000px;opacity:1}
 .deep-block .db-head .ico{font-size:40px}
 .deep-block .db-head h3{color:var(--c);font-size:16px}
 .deep-block .db-head .tnum{font-family:'Orbitron',sans-serif;font-size:10px;color:var(--c);letter-spacing:.2em;opacity:.7}
