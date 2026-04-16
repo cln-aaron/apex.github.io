@@ -199,8 +199,8 @@ em{font-style:normal;color:var(--cy)}
 .logi-grid .k{font-family:'Orbitron',sans-serif;font-size:10px;font-weight:700;letter-spacing:.2em;color:var(--gn);margin-bottom:8px;text-transform:uppercase}
 .logi-grid .val{color:#fff;font-weight:700;font-size:14px;margin-bottom:4px}
 .logi-grid p{font-size:12px;color:var(--tx2)}
-.closing-cta{margin-top:40px;display:flex;flex-direction:column;align-items:center;gap:28px}
-.closing-cta .alert-badge{display:block;background:var(--or);color:#000;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:800;letter-spacing:.18em;padding:10px 18px;box-shadow:var(--bs) rgba(255,107,53,.35)}
+.closing-cta{margin-top:40px;display:flex;flex-direction:column;align-items:center;gap:24px}
+.closing-cta .alert-badge{background:none;color:var(--or);font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;letter-spacing:.28em;padding:0;text-shadow:0 0 16px rgba(255,107,53,.4);animation:pulse 2.4s ease infinite;box-shadow:none}
 .closing-cta .closing-join{font-size:14px;padding:16px 28px}
 .waitlist-page{padding:180px 0 80px;min-height:calc(100vh - 200px);position:relative;z-index:3}
 @media(max-width:640px){.waitlist-page{padding-top:150px}}
