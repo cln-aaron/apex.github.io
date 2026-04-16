@@ -114,6 +114,16 @@ em{font-style:normal;color:var(--cy)}
 .deep-block .db-head .tnum{font-family:'Orbitron',sans-serif;font-size:10px;color:var(--c);letter-spacing:.2em;opacity:.7}
 .deep-block .db-body{padding:24px 28px}
 .deep-block .db-body p{font-size:13px;margin-bottom:20px}
+.deep-block .db-body p.story{font-size:14px;line-height:1.75;color:var(--tx);max-width:none;margin-bottom:18px}
+.deep-block .db-body p.story em{color:var(--c);font-style:normal;font-weight:700}
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:28px 0 32px;padding:20px;border:2px dashed var(--c);background:rgba(255,255,255,.015)}
+.stat-row .mini-stat{padding:6px 10px}
+.stat-row .mini-stat .num{font-family:'Orbitron',sans-serif;font-weight:900;font-size:26px;color:var(--c);text-shadow:0 0 14px color-mix(in srgb,var(--c) 40%,transparent);line-height:1;margin-bottom:8px}
+.stat-row .mini-stat .lb{font-size:11px;color:var(--tx2);line-height:1.5}
+.stat-row .mini-stat .src{display:block;margin-top:4px;font-size:10px;color:var(--tx2);opacity:.6;font-style:italic}
+.split-col p.col-p{font-size:12px;color:var(--tx2);line-height:1.7;margin:0}
+.split-col p.col-p em{color:var(--c);font-style:normal;font-weight:700}
+.sched-note{margin-top:20px;padding:12px 16px;border-left:3px solid var(--or);background:rgba(255,107,53,.06);font-size:12px;color:var(--or);font-family:'Space Mono',monospace;letter-spacing:.02em}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .split-col{border-left:3px solid var(--c);padding-left:16px}
 .split-col h4{font-family:'Orbitron',sans-serif;font-size:12px;color:#fff;margin-bottom:10px;letter-spacing:.08em}
@@ -176,7 +186,36 @@ em{font-style:normal;color:var(--cy)}
 .logi-grid .k{font-family:'Orbitron',sans-serif;font-size:10px;font-weight:700;letter-spacing:.2em;color:var(--gn);margin-bottom:8px;text-transform:uppercase}
 .logi-grid .val{color:#fff;font-weight:700;font-size:14px;margin-bottom:4px}
 .logi-grid p{font-size:12px;color:var(--tx2)}
+.waitlist-wrap{max-width:760px;margin:48px auto 0;text-align:left}
+.limited-banner{border:3px solid var(--or);background:rgba(255,107,53,.08);padding:18px 22px;margin-bottom:28px;box-shadow:var(--bs) rgba(255,107,53,.25)}
+.limited-banner .alert-badge{display:inline-block;background:var(--or);color:#000;font-family:'Orbitron',sans-serif;font-size:11px;font-weight:800;letter-spacing:.15em;padding:5px 12px;margin-bottom:10px}
+.limited-banner p{color:var(--tx);font-size:13px;line-height:1.6;max-width:none}
+.waitlist-form{background:var(--bg2);border:3px solid var(--bg3);padding:28px;box-shadow:var(--bs) rgba(0,0,0,.4)}
+.waitlist-form .form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+.waitlist-form label{display:flex;flex-direction:column;gap:6px}
+.waitlist-form label.full{margin-bottom:18px}
+.waitlist-form .flbl{font-family:'Orbitron',sans-serif;font-size:10px;font-weight:700;letter-spacing:.15em;color:var(--cy);text-transform:uppercase}
+.waitlist-form .flbl .opt{color:var(--tx2);font-weight:400;letter-spacing:.05em}
+.waitlist-form input,.waitlist-form select,.waitlist-form textarea{background:var(--bg);border:2px solid var(--bg3);color:var(--tx);font-family:'Space Mono',monospace;font-size:13px;padding:11px 14px;transition:border-color .15s,box-shadow .15s;width:100%}
+.waitlist-form input:focus,.waitlist-form select:focus,.waitlist-form textarea:focus{outline:none;border-color:var(--cy);box-shadow:0 0 0 2px rgba(0,255,245,.15)}
+.waitlist-form input::placeholder,.waitlist-form textarea::placeholder{color:var(--tx2);opacity:.55}
+.waitlist-form select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--cy) 50%),linear-gradient(135deg,var(--cy) 50%,transparent 50%);background-position:calc(100% - 16px) 50%,calc(100% - 11px) 50%;background-size:5px 5px,5px 5px;background-repeat:no-repeat;padding-right:36px}
+.waitlist-form textarea{resize:vertical;min-height:80px}
+.waitlist-form .form-submit{margin-top:10px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.waitlist-form .form-submit button{border:none}
+.waitlist-form .form-note{font-size:11px;color:var(--tx2);margin:0;letter-spacing:.04em}
+.waitlist-form .form-msg{margin-top:16px;padding:12px 16px;font-size:13px;display:none}
+.waitlist-form .form-msg.success{display:block;border:2px solid var(--gn);background:rgba(57,255,20,.08);color:var(--gn)}
+.waitlist-form .form-msg.error{display:block;border:2px solid var(--or);background:rgba(255,107,53,.08);color:var(--or)}
+.waitlist-form.sending .form-submit button{opacity:.6;pointer-events:none}
+.waitlist-form.done{display:none}
+.waitlist-done{border:3px solid var(--gn);background:rgba(57,255,20,.06);padding:32px 28px;box-shadow:var(--bs) rgba(57,255,20,.3);text-align:center;display:none}
+.waitlist-done.visible{display:block}
+.waitlist-done h3{color:var(--gn);font-size:18px;margin-bottom:10px}
+.waitlist-done p{color:var(--tx);font-size:13px;max-width:480px;margin:0 auto}
+@media(max-width:640px){.waitlist-form .form-row{grid-template-columns:1fr;gap:14px}}
 #closing{text-align:center;padding:120px 0}
+#closing .waitlist-wrap{text-align:left}
 #closing .quote{font-family:'Orbitron',sans-serif;font-size:clamp(22px,4vw,44px);font-weight:700;color:#fff;max-width:780px;margin:0 auto 28px;line-height:1.2}
 #closing .quote .acc{color:var(--cy);text-shadow:0 0 20px rgba(0,255,245,.5)}
 #closing .you{font-family:'Orbitron',sans-serif;font-weight:900;font-size:clamp(60px,12vw,160px);background:linear-gradient(90deg,var(--cy),var(--pk),var(--or),var(--gn));background-size:300% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shift 5s ease infinite;display:block;margin:20px 0 36px;line-height:.9}

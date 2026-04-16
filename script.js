@@ -86,3 +86,50 @@
   function next(){if(i>=lines.length)return;lines[i].style.visibility='visible';i++;setTimeout(next,280);}
   setTimeout(next,400);
 })();
+
+// Waitlist form submission
+(function(){
+  const form=document.getElementById('waitlistForm');
+  if(!form)return;
+  const msg=document.getElementById('formMsg');
+  const done=document.getElementById('waitlistDone');
+  const submitBtn=document.getElementById('waitlistSubmit');
+  form.addEventListener('submit',async (e)=>{
+    e.preventDefault();
+    // Basic validation
+    if(!form.checkValidity()){
+      msg.textContent='Please fill in the required fields.';
+      msg.className='form-msg error';
+      form.reportValidity();
+      return;
+    }
+    const action=form.getAttribute('action')||'';
+    // If endpoint not yet configured, simulate success so the UI still demos
+    const unconfigured=action.includes('YOUR_FORM_ID');
+    form.classList.add('sending');
+    submitBtn.textContent='Sending...';
+    msg.className='form-msg';
+    msg.textContent='';
+    try{
+      if(!unconfigured){
+        const res=await fetch(action,{
+          method:'POST',
+          headers:{'Accept':'application/json'},
+          body:new FormData(form)
+        });
+        if(!res.ok)throw new Error('Submit failed');
+      }else{
+        // Small delay so the user sees the transition
+        await new Promise(r=>setTimeout(r,700));
+      }
+      form.classList.add('done');
+      done.classList.add('visible');
+      done.scrollIntoView({behavior:'smooth',block:'center'});
+    }catch(err){
+      msg.className='form-msg error';
+      msg.textContent='Something went wrong. Please email waitlist@apex2026.sg instead.';
+      form.classList.remove('sending');
+      submitBtn.textContent='Join The Waitlist';
+    }
+  });
+})();
