@@ -235,6 +235,28 @@ em{font-style:normal;color:var(--cy)}
 .waitlist-done h3{color:var(--gn);font-size:18px;margin-bottom:10px}
 .waitlist-done p{color:var(--tx);font-size:13px;max-width:480px;margin:0 auto}
 @media(max-width:640px){.waitlist-form .form-row{grid-template-columns:1fr;gap:14px}}
+/* Hero plain-English line */
+.hero-plain{font-size:15px;color:var(--tx);max-width:560px;line-height:1.7;margin-bottom:8px;letter-spacing:.01em}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:40px}
+.faq-card{background:var(--bg2);border:2px solid var(--bg3);padding:24px;transition:border-color .2s,transform .2s}
+.faq-card:hover{border-color:var(--cy);transform:translateY(-3px)}
+.faq-card h4{font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;color:var(--cy);margin-bottom:10px;letter-spacing:.04em}
+.faq-card p{font-size:13px;color:var(--tx);line-height:1.7;max-width:none}
+
+/* Proof strip */
+.proof-strip{display:flex;justify-content:center;gap:0;border:3px solid var(--cy);box-shadow:0 0 40px rgba(0,255,245,.08);flex-wrap:wrap}
+.proof-item{flex:1;min-width:140px;padding:28px 20px;text-align:center;border-right:2px solid var(--bg3)}
+.proof-item:last-child{border-right:none}
+.proof-num{font-family:'Orbitron',sans-serif;font-weight:900;font-size:36px;color:var(--cy);text-shadow:0 0 20px rgba(0,255,245,.4);line-height:1;margin-bottom:8px}
+.proof-lbl{font-size:11px;color:var(--tx2);letter-spacing:.12em;text-transform:uppercase;font-family:'Orbitron',sans-serif;font-weight:600}
+.proof-backed{margin-top:28px;text-align:center}
+.proof-backed p{font-size:14px;color:var(--tx);max-width:640px;margin:0 auto;line-height:1.7}
+.proof-backed a{color:var(--cy);text-decoration:none;border-bottom:1px solid var(--cy);transition:.2s}
+.proof-backed a:hover{color:var(--pk);border-color:var(--pk)}
+@media(max-width:600px){.proof-strip{flex-direction:column}.proof-item{border-right:none;border-bottom:2px solid var(--bg3)}.proof-item:last-child{border-bottom:none}}
+
 #closing{text-align:center;padding:120px 0}
 #closing .waitlist-wrap{text-align:left}
 #closing .quote{font-family:'Orbitron',sans-serif;font-size:clamp(22px,4vw,44px);font-weight:700;color:#fff;max-width:780px;margin:0 auto 28px;line-height:1.2}
