@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Outer apex/peak triangle -->
+  <polygon points="100,12 188,172 12,172" stroke="#00fff5" stroke-width="6" fill="none" stroke-linejoin="miter"/>
+
+  <!-- Inner cutout triangle (creates the "A" crossbar gap) -->
+  <polygon points="100,68 144,148 56,148" stroke="#ff2e93" stroke-width="3" fill="none" stroke-linejoin="miter"/>
+
+  <!-- Crossbar of the A -->
+  <line x1="52" y1="132" x2="148" y2="132" stroke="#00fff5" stroke-width="4"/>
+
+  <!-- Circuit nodes on crossbar -->
+  <circle cx="52" cy="132" r="5" fill="#00fff5"/>
+  <circle cx="100" cy="132" r="5" fill="#ff2e93"/>
+  <circle cx="148" cy="132" r="5" fill="#00fff5"/>
+
+  <!-- Vertical circuit line from apex -->
+  <line x1="100" y1="12" x2="100" y2="68" stroke="#00fff5" stroke-width="3"/>
+
+  <!-- Apex node -->
+  <circle cx="100" cy="12" r="6" fill="#ff2e93"/>
+
+  <!-- Data lines extending from inner triangle -->
+  <line x1="78" y1="108" x2="60" y2="108" stroke="#39ff14" stroke-width="2"/>
+  <circle cx="58" cy="108" r="3" fill="#39ff14"/>
+  <line x1="122" y1="108" x2="140" y2="108" stroke="#39ff14" stroke-width="2"/>
+  <circle cx="142" cy="108" r="3" fill="#39ff14"/>
+
+  <!-- Small accent squares (Roblox-blocky feel) -->
+  <rect x="30" y="155" width="8" height="8" fill="#ff6b35" opacity="0.8"/>
+  <rect x="162" y="155" width="8" height="8" fill="#ff6b35" opacity="0.8"/>
+
+  <!-- Bottom base glow line -->
+  <line x1="12" y1="178" x2="188" y2="178" stroke="#00fff5" stroke-width="2" opacity="0.4"/>
+
+  <!-- "2026" encoded as small blocks at base -->
+  <rect x="72" y="182" width="4" height="8" fill="#00fff5" opacity="0.5"/>
+  <rect x="80" y="182" width="4" height="8" fill="#ff2e93" opacity="0.5"/>
+  <rect x="88" y="182" width="4" height="8" fill="#39ff14" opacity="0.5"/>
+  <rect x="96" y="182" width="4" height="8" fill="#ff6b35" opacity="0.5"/>
+  <rect x="104" y="182" width="4" height="8" fill="#00fff5" opacity="0.5"/>
+  <rect x="112" y="182" width="4" height="8" fill="#ff2e93" opacity="0.5"/>
+  <rect x="120" y="182" width="4" height="8" fill="#39ff14" opacity="0.5"/>
+  <rect x="128" y="182" width="4" height="8" fill="#ff6b35" opacity="0.5"/>
+</svg>
