@@ -37,10 +37,10 @@ em{font-style:normal;color:var(--cy)}
 .zone-label::before{content:'';width:30px;height:3px;background:var(--cy)}
 #hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;position:relative}
 #hero .hero-badge{display:inline-block;background:var(--pk);color:#fff;font-family:'Orbitron',sans-serif;font-size:11px;font-weight:700;letter-spacing:.15em;padding:8px 18px;margin-bottom:24px;box-shadow:var(--bs) rgba(255,46,147,.4);animation:glitch 4s ease infinite;text-transform:uppercase}
-.hero-title{display:flex;align-items:center;gap:28px;margin-bottom:16px}
-.hero-logo{width:clamp(100px,14vw,160px);height:auto;flex-shrink:0;filter:drop-shadow(0 0 20px rgba(0,255,245,.35))}
+.hero-title{display:flex;align-items:center;gap:20px;margin-bottom:16px}
+.hero-logo{width:clamp(56px,7vw,80px);height:auto;flex-shrink:0;filter:drop-shadow(0 0 14px rgba(0,255,245,.35))}
 #hero h1{margin-bottom:0}
-@media(max-width:640px){.hero-title{gap:18px}.hero-logo{width:80px}}
+@media(max-width:640px){.hero-title{gap:14px}.hero-logo{width:48px}}
 #hero h1 .neon{color:var(--cy);animation:neonFlicker 3s ease infinite;display:block}
 #hero .sub{font-family:'Orbitron',sans-serif;font-size:clamp(16px,2.5vw,28px);font-weight:500;color:var(--tx);margin-bottom:32px}
 #hero .sub em{color:var(--cy);font-style:normal}
@@ -200,9 +200,9 @@ em{font-style:normal;color:var(--cy)}
 @media(max-width:640px){.waitlist-page{padding-top:150px}}
 .waitlist-page .wrap{max-width:860px}
 .wl-title-row{display:flex;align-items:center;gap:22px}
-.wl-logo{width:clamp(70px,10vw,110px);height:auto;flex-shrink:0;filter:drop-shadow(0 0 16px rgba(0,255,245,.35))}
+.wl-logo{width:clamp(44px,6vw,64px);height:auto;flex-shrink:0;filter:drop-shadow(0 0 14px rgba(0,255,245,.35))}
 .waitlist-page .wl-title{font-size:clamp(36px,6vw,72px);margin:16px 0 12px}
-@media(max-width:640px){.wl-logo{width:60px}}
+@media(max-width:640px){.wl-logo{width:40px}}
 .waitlist-page .wl-sub{font-size:clamp(15px,1.6vw,18px);color:var(--tx);max-width:640px;margin-bottom:40px;line-height:1.6}
 .waitlist-wrap{max-width:760px;margin:48px auto 0;text-align:left}
 .limited-banner{border:3px solid var(--or);background:rgba(255,107,53,.08);padding:18px 22px;margin-bottom:28px;box-shadow:var(--bs) rgba(255,107,53,.25)}
