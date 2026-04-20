@@ -56,6 +56,23 @@
             <input type="tel" name="mobile" autocomplete="tel" />
           </label>
           <label>
+            <span class="flbl">// Telegram Handle</span>
+            <input type="text" name="telegram" placeholder="@yourhandle" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span class="flbl">// LinkedIn</span>
+            <input type="url" name="linkedin" placeholder="linkedin.com/in/you" />
+          </label>
+          <label>
+            <span class="flbl">// Instagram <span class="opt">( vibe check 👀 )</span></span>
+            <input type="text" name="instagram" placeholder="@yourhandle" />
+            <span class="field-hint">We're not stalking — we just wanna see the energy you bring. Think of it as your portfolio but make it ✨aesthetic✨</span>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
             <span class="flbl">// Institution</span>
             <select name="institution" required>
               <option value="">— select —</option>
@@ -67,12 +84,12 @@
               <option>Other</option>
             </select>
           </label>
-        </div>
-        <div class="form-row">
           <label>
             <span class="flbl">// Year of Study</span>
             <input type="text" name="year" required placeholder="e.g. Year 2" />
           </label>
+        </div>
+        <div class="form-row">
           <label>
             <span class="flbl">// Track of Interest</span>
             <select name="track" required>
@@ -84,10 +101,25 @@
               <option>Not sure yet</option>
             </select>
           </label>
+          <label>
+            <span class="flbl">// AI Experience Level</span>
+            <select name="ai_level">
+              <option value="">— select —</option>
+              <option>Total noob — never touched AI tools</option>
+              <option>Curious — played around a bit</option>
+              <option>Regular user — ChatGPT is my co-pilot</option>
+              <option>Power user — I automate stuff already</option>
+              <option>Builder — I've shipped something with AI</option>
+            </select>
+          </label>
         </div>
         <label class="full">
-          <span class="flbl">// Why Do You Want In? <span class="opt">(optional, short)</span></span>
-          <textarea name="why" rows="3" placeholder="One or two sentences — what are you hoping to walk away with?"></textarea>
+          <span class="flbl">// What's the one thing you'd build if you had the skills?</span>
+          <textarea name="dream_build" rows="2" placeholder="An app? A brand? A security tool? A side hustle? Dream big — no wrong answers."></textarea>
+        </label>
+        <label class="full">
+          <span class="flbl">// Why should we pick you? <span class="opt">(sell yourself in 2 lines)</span></span>
+          <textarea name="why" rows="2" placeholder="What do you bring to the table? Hustle? Curiosity? A wild idea? A notebook full of plans?"></textarea>
         </label>
         <div class="form-submit">
           <button type="submit" class="hud-btn pink" id="waitlistSubmit">Transmit Application</button>
