@@ -18,20 +18,10 @@ em{font-style:normal;color:var(--cy)}
 @keyframes glitch{0%,100%{transform:translate(0)}20%{transform:translate(-3px,3px)}40%{transform:translate(3px,-2px)}60%{transform:translate(-2px,-3px)}80%{transform:translate(2px,2px)}}
 @keyframes neonFlicker{0%,19%,21%,23%,25%,54%,56%,100%{text-shadow:0 0 10px var(--cy),0 0 40px var(--cy)}20%,24%,55%{text-shadow:none}}
 .hud-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:12px 24px;background:rgba(10,10,18,.92);border-bottom:3px solid var(--cy);box-shadow:0 4px 30px rgba(0,255,245,.15)}
-.hud-nav .logo{display:flex;align-items:center;gap:10px;font-family:'Orbitron',sans-serif;font-weight:900;letter-spacing:.08em}
-.hud-nav .logo .host-link,.hud-nav .logo .event-link{display:flex;align-items:center;gap:10px;text-decoration:none;transition:filter .2s,color .2s}
-.hud-nav .logo .host-link{color:var(--cy)}
-.hud-nav .logo .host-link:hover{filter:drop-shadow(0 0 8px var(--cy))}
-.hud-nav .logo .nav-logo{width:28px;height:28px;color:var(--cy);filter:drop-shadow(0 0 6px rgba(0,255,245,.55));flex-shrink:0}
-.hud-nav .logo .host{font-size:13px;color:var(--cy);letter-spacing:.1em}
-.hud-nav .logo .host .amp{color:var(--pk);font-weight:700}
-.hud-nav .logo .sep{width:1px;height:16px;background:var(--bg3)}
-.hud-nav .logo .event-link{font-size:14px;color:#fff;letter-spacing:.08em}
-.hud-nav .logo .event-link:hover{color:var(--cy);filter:drop-shadow(0 0 8px var(--cy))}
-@media(max-width:640px){
-  .hud-nav .logo .host,.hud-nav .logo .sep{display:none}
-  .hud-nav .logo .event-link{font-size:13px}
-}
+.hud-nav .logo{display:flex;align-items:center;font-family:'Orbitron',sans-serif;font-weight:900;letter-spacing:.08em}
+.hud-nav .logo .event-link{font-size:16px;color:#fff;letter-spacing:.1em;text-decoration:none;text-shadow:0 0 20px rgba(0,255,245,.4);transition:color .2s,text-shadow .2s}
+.hud-nav .logo .event-link:hover{color:var(--cy);text-shadow:0 0 30px rgba(0,255,245,.7)}
+@media(max-width:640px){.hud-nav .logo .event-link{font-size:14px}}
 .hud-nav .nav-links{display:flex;gap:6px}
 .hud-nav .nav-links a{font-family:'Orbitron',sans-serif;font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--tx2);padding:8px 14px;border:2px solid transparent;transition:.2s}
 .hud-nav .nav-links a:hover,.hud-nav .nav-links a.active{color:var(--cy);border-color:var(--cy);background:rgba(0,255,245,.08);box-shadow:0 0 15px rgba(0,255,245,.2)}
