@@ -37,10 +37,9 @@ em{font-style:normal;color:var(--cy)}
 .zone-label::before{content:'';width:30px;height:3px;background:var(--cy)}
 #hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;position:relative}
 #hero .hero-badge{display:inline-block;background:var(--pk);color:#fff;font-family:'Orbitron',sans-serif;font-size:11px;font-weight:700;letter-spacing:.15em;padding:8px 18px;margin-bottom:24px;box-shadow:var(--bs) rgba(255,46,147,.4);animation:glitch 4s ease infinite;text-transform:uppercase}
-.hero-title{display:inline-flex;align-items:center;gap:14px;margin-bottom:16px}
-.hero-logo{width:44px;height:44px;flex-shrink:0;filter:drop-shadow(0 0 10px rgba(0,255,245,.3))}
+.hero-title{display:inline-flex;align-items:center;gap:16px;margin-bottom:16px}
+.hero-logo{height:1em;width:auto;flex-shrink:0;filter:drop-shadow(0 0 10px rgba(0,255,245,.3))}
 #hero h1{margin-bottom:0}
-@media(max-width:640px){.hero-logo{width:36px;height:36px}}
 #hero h1 .neon{color:var(--cy);animation:neonFlicker 3s ease infinite;display:block}
 #hero .sub{font-family:'Orbitron',sans-serif;font-size:clamp(16px,2.5vw,28px);font-weight:500;color:var(--tx);margin-bottom:32px}
 #hero .sub em{color:var(--cy);font-style:normal}
@@ -200,7 +199,7 @@ em{font-style:normal;color:var(--cy)}
 @media(max-width:640px){.waitlist-page{padding-top:150px}}
 .waitlist-page .wrap{max-width:860px}
 .wl-title-row{display:flex;align-items:center;gap:22px}
-.wl-logo{width:36px;height:36px;flex-shrink:0;filter:drop-shadow(0 0 10px rgba(0,255,245,.3))}
+.wl-logo{height:0.9em;width:auto;flex-shrink:0;filter:drop-shadow(0 0 10px rgba(0,255,245,.3))}
 .waitlist-page .wl-title{font-size:clamp(36px,6vw,72px);margin:16px 0 12px}
 @media(max-width:640px){.wl-logo{width:40px}}
 .waitlist-page .wl-sub{font-size:clamp(15px,1.6vw,18px);color:var(--tx);max-width:640px;margin-bottom:40px;line-height:1.6}
