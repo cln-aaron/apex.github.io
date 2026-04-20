@@ -315,7 +315,7 @@ footer{padding:40px 24px;text-align:center;font-family:'Orbitron',sans-serif;fon
 .footer-prod-lbl{font-size:9px;letter-spacing:.22em;color:var(--tx2);text-transform:uppercase}
 .footer-he{display:flex;align-items:center;gap:10px;text-decoration:none;transition:filter .2s}
 .footer-he:hover{filter:drop-shadow(0 0 8px var(--cy))}
-.footer-he-logo{height:28px;width:auto;color:var(--cy);filter:drop-shadow(0 0 5px rgba(0,255,245,.4))}
+.footer-he-logo{height:18px;width:18px;flex-shrink:0;color:var(--cy);filter:drop-shadow(0 0 5px rgba(0,255,245,.4))}
 .footer-he-name{font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;color:#fff;letter-spacing:.08em}
 .footer-addr{margin-top:14px;color:var(--tx2);letter-spacing:.1em;font-size:10px}
 .footer-copy{color:var(--tx2);opacity:.7;letter-spacing:.12em;font-size:10px}
