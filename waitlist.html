@@ -73,8 +73,8 @@
         </div>
         <div class="form-row">
           <label>
-            <span class="flbl">// Institution</span>
-            <select name="institution" required>
+            <span class="flbl">// Institution Type</span>
+            <select name="institution_type" required>
               <option value="">— select —</option>
               <option>Secondary School</option>
               <option>Junior College / MI</option>
@@ -83,6 +83,16 @@
               <option>University</option>
               <option>Other</option>
             </select>
+          </label>
+          <label>
+            <span class="flbl">// School / Institution Name</span>
+            <input type="text" name="institution_name" required placeholder="e.g. Ngee Ann Polytechnic" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span class="flbl">// Course / Programme</span>
+            <input type="text" name="course" placeholder="e.g. Diploma in Cybersecurity" />
           </label>
           <label>
             <span class="flbl">// Year of Study</span>
@@ -121,6 +131,16 @@
           <span class="flbl">// Why should we pick you? <span class="opt">(sell yourself in 2 lines)</span></span>
           <textarea name="why" rows="2" placeholder="What do you bring to the table? Hustle? Curiosity? A wild idea? A notebook full of plans?"></textarea>
         </label>
+        <div class="pdpa-consent">
+          <label class="checkbox-label">
+            <input type="checkbox" name="pdpa_consent" required />
+            <span class="check-text">I consent to the collection, use, and disclosure of my personal data by Digital Defence Alliance Singapore (DDAS) and Hesed &amp; Emet Advisory Pte Ltd for the purposes of processing my application, communicating bootcamp-related updates, and programme administration, in accordance with the <strong>Personal Data Protection Act (PDPA)</strong> of Singapore.</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="marketing_consent" />
+            <span class="check-text">I'd also like to receive updates about future programmes, events, and opportunities from DDAS and Hesed &amp; Emet Advisory. <span class="opt">(optional)</span></span>
+          </label>
+        </div>
         <div class="form-submit">
           <button type="submit" class="hud-btn pink" id="waitlistSubmit">Transmit Application</button>
           <p class="form-note">We'll reply within 5 working days with next steps.</p>
