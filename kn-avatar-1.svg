@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Roblox-style avatar: brain with lightning/glitch -->
+  <!-- Head block -->
+  <rect x="60" y="20" width="80" height="80" rx="6" fill="#1a1a2e" stroke="#ff2e93" stroke-width="4"/>
+  <!-- Brain outline -->
+  <path d="M85 45 C75 40 72 50 75 58 C70 60 68 70 78 72 C76 78 82 82 90 78 C95 85 105 82 108 76 C115 78 120 70 118 62 C125 58 122 48 115 45 C118 38 110 32 102 36 C96 30 86 32 85 45Z" fill="none" stroke="#00fff5" stroke-width="2.5"/>
+  <!-- Lightning bolt through brain -->
+  <path d="M95 38 L88 58 L98 55 L90 78" stroke="#ff2e93" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Eyes (digital) -->
+  <rect x="82" y="52" width="8" height="4" fill="#00fff5"/>
+  <rect x="102" y="52" width="8" height="4" fill="#00fff5"/>
+  <!-- Body block -->
+  <rect x="55" y="108" width="90" height="60" rx="4" fill="#1a1a2e" stroke="#ff2e93" stroke-width="3"/>
+  <!-- Chest circuit lines -->
+  <line x1="75" y1="120" x2="75" y2="150" stroke="#00fff5" stroke-width="2" opacity="0.6"/>
+  <line x1="100" y1="115" x2="100" y2="155" stroke="#ff2e93" stroke-width="2" opacity="0.6"/>
+  <line x1="125" y1="120" x2="125" y2="150" stroke="#00fff5" stroke-width="2" opacity="0.6"/>
+  <line x1="70" y1="135" x2="130" y2="135" stroke="#39ff14" stroke-width="2" opacity="0.4"/>
+  <!-- Debt meter on chest -->
+  <rect x="80" y="122" width="40" height="8" rx="2" fill="none" stroke="#ff2e93" stroke-width="1.5"/>
+  <rect x="81" y="123" width="28" height="6" rx="1" fill="#ff2e93" opacity="0.7"/>
+  <!-- Arms (blocky) -->
+  <rect x="35" y="112" width="16" height="50" rx="3" fill="#1a1a2e" stroke="#00fff5" stroke-width="2"/>
+  <rect x="149" y="112" width="16" height="50" rx="3" fill="#1a1a2e" stroke="#00fff5" stroke-width="2"/>
+  <!-- Legs -->
+  <rect x="65" y="172" width="24" height="20" rx="3" fill="#1a1a2e" stroke="#ff2e93" stroke-width="2"/>
+  <rect x="111" y="172" width="24" height="20" rx="3" fill="#1a1a2e" stroke="#ff2e93" stroke-width="2"/>
+</svg>
