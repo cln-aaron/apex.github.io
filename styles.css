@@ -275,13 +275,13 @@ em{font-style:normal;color:var(--cy)}
 @media(max-width:600px){.proof-strip{flex-direction:column}.proof-item{border-right:none;border-bottom:2px solid var(--bg3)}.proof-item:last-child{border-bottom:none}}
 
 /* Organisers strip */
-.org-strip{display:flex;justify-content:center;align-items:flex-start;gap:40px;flex-wrap:wrap}
-.org-col{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.org-strip{display:flex;justify-content:center;align-items:stretch;gap:40px;flex-wrap:wrap}
+.org-col{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;justify-content:center}
 .org-coorg-row{display:flex;align-items:center;gap:28px}
 .org-vdivider{width:1px;align-self:stretch;background:var(--bg3);flex-shrink:0}
 .org-role{font-family:'Orbitron',sans-serif;font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--tx2)}
 .org-img{object-fit:contain}
-.org-img-sq{height:130px;width:auto}
+.org-img-sq{height:120px;width:auto}
 .org-img-nyc{height:120px;width:auto}
 .org-img-wide{height:55px;width:auto;max-width:240px}
 .org-he-svg{height:75px;width:auto;color:#fff;filter:drop-shadow(0 0 8px rgba(0,255,245,.3))}
