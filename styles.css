@@ -298,9 +298,9 @@ em{font-style:normal;color:var(--cy)}
 @media(max-width:640px){.keynote-speaker{flex-direction:column;text-align:center}.kn-avatar{width:60px;height:60px}}
 .keynote-grid{display:flex;flex-direction:column;gap:24px;margin-top:32px}
 .keynote-card{background:var(--bg2);border:3px solid var(--bg3);padding:32px 28px;box-shadow:var(--bs) rgba(0,0,0,.3);position:relative;overflow:hidden;display:flex;align-items:flex-start;gap:24px}
-.kn-card-avatar{width:120px;height:120px;flex-shrink:0;opacity:.85;filter:drop-shadow(0 0 12px rgba(0,255,245,.2))}
+.kn-card-avatar{width:100px;height:100px;flex-shrink:0;opacity:.85;filter:drop-shadow(0 0 12px rgba(0,255,245,.2));align-self:center}
 .kn-card-content{flex:1;min-width:0}
-@media(max-width:640px){.keynote-card{flex-direction:column;align-items:center;text-align:center}.kn-card-avatar{width:80px;height:80px}}
+@media(max-width:640px){.keynote-card{flex-direction:column;align-items:center;text-align:center}.kn-card-avatar{width:70px;height:70px}}
 .keynote-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pk),var(--cy))}
 .kn-day{font-family:'Orbitron',sans-serif;font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--pk);margin-bottom:14px}
 .keynote-card h3{font-size:clamp(18px,2.5vw,26px);color:#fff;margin-bottom:10px;line-height:1.2}
