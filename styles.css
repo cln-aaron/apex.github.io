@@ -275,10 +275,10 @@ em{font-style:normal;color:var(--cy)}
 @media(max-width:600px){.proof-strip{flex-direction:column}.proof-item{border-right:none;border-bottom:2px solid var(--bg3)}.proof-item:last-child{border-bottom:none}}
 
 /* Organisers strip */
-.org-strip{display:flex;justify-content:center;align-items:center;gap:40px;flex-wrap:wrap}
+.org-strip{display:flex;justify-content:center;align-items:flex-start;gap:40px;flex-wrap:wrap}
 .org-col{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
 .org-coorg-row{display:flex;align-items:center;gap:28px}
-.org-vdivider{width:1px;height:80px;background:var(--bg3);flex-shrink:0}
+.org-vdivider{width:1px;align-self:stretch;background:var(--bg3);flex-shrink:0}
 .org-role{font-family:'Orbitron',sans-serif;font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--tx2)}
 .org-img{object-fit:contain}
 .org-img-sq{height:130px;width:auto}
