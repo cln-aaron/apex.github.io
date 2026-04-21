@@ -281,7 +281,7 @@ em{font-style:normal;color:var(--cy)}
 .org-vdivider{width:1px;align-self:stretch;background:var(--bg3);flex-shrink:0}
 .org-role{font-family:'Orbitron',sans-serif;font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--tx2)}
 .org-img{object-fit:contain}
-.org-img-sq{height:160px;width:auto}
+.org-img-sq{height:185px;width:auto}
 .org-img-nyc{height:120px;width:auto}
 .org-img-wide{height:70px;width:auto;max-width:240px;margin-top:auto;margin-bottom:auto}
 .org-he-svg{height:75px;width:auto;color:#fff;filter:drop-shadow(0 0 8px rgba(0,255,245,.3));margin-top:auto;margin-bottom:auto}
