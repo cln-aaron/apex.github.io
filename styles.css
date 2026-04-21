@@ -277,7 +277,13 @@ em{font-style:normal;color:var(--cy)}
   .org-img-wide{height:32px;max-width:140px}
 }
 /* Keynote */
-.keynote-grid{display:flex;flex-direction:column;gap:24px;margin-top:44px}
+.keynote-speaker{display:flex;align-items:center;gap:22px;margin-top:28px;padding:22px 26px;border:3px solid var(--pk);background:rgba(255,46,147,.05);box-shadow:var(--bs) rgba(255,46,147,.2)}
+.kn-avatar{width:72px;height:72px;object-fit:cover;border:3px solid var(--pk);flex-shrink:0;filter:saturate(.9) contrast(1.05)}
+.kn-speaker-role{font-family:'Orbitron',sans-serif;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--pk);margin-bottom:4px}
+.kn-speaker-name{font-family:'Orbitron',sans-serif;font-size:22px;font-weight:900;color:#fff;letter-spacing:.06em;margin-bottom:8px}
+.kn-speaker-bio{font-size:13px;color:var(--tx);line-height:1.7;max-width:none}
+@media(max-width:640px){.keynote-speaker{flex-direction:column;text-align:center}.kn-avatar{width:60px;height:60px}}
+.keynote-grid{display:flex;flex-direction:column;gap:24px;margin-top:32px}
 .keynote-card{background:var(--bg2);border:3px solid var(--bg3);padding:32px 28px;box-shadow:var(--bs) rgba(0,0,0,.3);position:relative;overflow:hidden}
 .keynote-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pk),var(--cy))}
 .kn-day{font-family:'Orbitron',sans-serif;font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--pk);margin-bottom:14px}
