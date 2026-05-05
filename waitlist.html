@@ -57,7 +57,7 @@
         <div class="form-row">
           <label>
             <span class="flbl">// Mobile <span class="opt">(WhatsApp)</span></span>
-            <input type="tel" name="mobile" autocomplete="tel" />
+            <input type="tel" name="mobile" required autocomplete="tel" />
           </label>
           <label>
             <span class="flbl">// Telegram Handle</span>
@@ -67,7 +67,7 @@
         <div class="form-row">
           <label>
             <span class="flbl">// LinkedIn</span>
-            <input type="url" name="linkedin" placeholder="linkedin.com/in/you" />
+            <input type="text" name="linkedin" placeholder="linkedin.com/in/you" />
           </label>
           <label>
             <span class="flbl">// Instagram <span class="opt">( vibe check 👀 )</span></span>
@@ -96,7 +96,7 @@
         <div class="form-row">
           <label>
             <span class="flbl">// Course / Programme</span>
-            <input type="text" name="course" placeholder="e.g. Diploma in Cybersecurity" />
+            <input type="text" name="course" required placeholder="e.g. Diploma in Cybersecurity" />
           </label>
           <label>
             <span class="flbl">// Year of Study</span>
@@ -116,7 +116,7 @@
           </label>
           <label>
             <span class="flbl">// AI Experience Level</span>
-            <select name="ai_level">
+            <select name="ai_level" required>
               <option value="">— select —</option>
               <option>Total noob: never touched AI tools</option>
               <option>Curious: played around a bit</option>
@@ -128,11 +128,11 @@
         </div>
         <label class="full">
           <span class="flbl">// What's the one thing you'd build if you had the skills?</span>
-          <textarea name="dream_build" rows="2" placeholder="An app? A brand? A security tool? A side hustle? Dream big. No wrong answers."></textarea>
+          <textarea name="dream_build" rows="2" required placeholder="An app? A brand? A security tool? A side hustle? Dream big. No wrong answers."></textarea>
         </label>
         <label class="full">
           <span class="flbl">// Why should we pick you? <span class="opt">(sell yourself in 2 lines)</span></span>
-          <textarea name="why" rows="2" placeholder="What do you bring to the table? Hustle? Curiosity? A wild idea? A notebook full of plans?"></textarea>
+          <textarea name="why" rows="2" required placeholder="What do you bring to the table? Hustle? Curiosity? A wild idea? A notebook full of plans?"></textarea>
         </label>
         <div class="pdpa-consent">
           <label class="checkbox-label">
@@ -140,8 +140,8 @@
             <span class="check-text">I consent to the collection, use, and disclosure of my personal data by Digital Defence Alliance Singapore (DDAS) and Hesed &amp; Emet Advisory Pte Ltd for the purposes of processing my application, communicating bootcamp-related updates, and programme administration, in accordance with the <strong>Personal Data Protection Act (PDPA)</strong> of Singapore.</span>
           </label>
           <label class="checkbox-label">
-            <input type="checkbox" name="marketing_consent" />
-            <span class="check-text">I'd also like to receive updates about future programmes, events, and opportunities from DDAS and Hesed &amp; Emet Advisory. <span class="opt">(optional)</span></span>
+            <input type="checkbox" name="marketing_consent" required />
+            <span class="check-text">I agree to receive updates about future programmes, events, and opportunities from DDAS and Hesed &amp; Emet Advisory.</span>
           </label>
         </div>
         <div class="form-submit">
