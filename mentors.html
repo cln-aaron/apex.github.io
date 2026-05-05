@@ -63,12 +63,114 @@
       </div>
     </div>
 
-    <div class="challenge-box reveal" style="border-color:var(--pk);box-shadow:var(--bs) rgba(255,46,147,.2);margin-top:48px;">
-      <h3>Ready to Mentor?</h3>
-      <p style="margin-top:8px;">Send us a short intro: your industry and what you'd love to share. We'll match you to the right track and slot.</p>
-      <div style="margin-top:24px;display:flex;gap:14px;flex-wrap:wrap;">
-        <a href="mailto:mentors@apex2026.sg?subject=Mentor%20Application%20%E2%80%94%20APEX%202026" class="hud-btn pink">Apply to Mentor</a>
-        <a href="mailto:partners@apex2026.sg?subject=Nominate%20a%20Mentor%20%E2%80%94%20APEX%202026" class="hud-btn outline">Nominate Someone</a>
+    <div class="waitlist-wrap reveal" style="margin-top:48px;">
+      <div class="limited-banner" style="border-color:var(--pk);box-shadow:var(--bs) rgba(255,46,147,.25);">
+        <span class="alert-badge" style="background:var(--pk);">MENTOR APPLICATION</span>
+        <p>Fill in the form below. We'll match you to the right track and slot.</p>
+      </div>
+
+      <form class="waitlist-form" id="waitlistForm" action="https://formspree.io/f/xpqklglw" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Mentor Application — APEX 2026" />
+        <input type="hidden" name="form_type" value="mentor_application" />
+        <div class="form-row">
+          <label>
+            <span class="flbl">// Full Name</span>
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label>
+            <span class="flbl">// Email</span>
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span class="flbl">// Mobile <span class="opt">(WhatsApp)</span></span>
+            <input type="tel" name="mobile" required autocomplete="tel" />
+          </label>
+          <label>
+            <span class="flbl">// LinkedIn</span>
+            <input type="text" name="linkedin" placeholder="linkedin.com/in/you" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span class="flbl">// Current Role / Title</span>
+            <input type="text" name="role" required placeholder="e.g. Security Analyst at XYZ" />
+          </label>
+          <label>
+            <span class="flbl">// Organisation</span>
+            <input type="text" name="organisation" required placeholder="e.g. Company, freelance, self-employed" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span class="flbl">// Area of Expertise</span>
+            <select name="expertise" required>
+              <option value="">— select —</option>
+              <option>AI / Machine Learning</option>
+              <option>Cybersecurity / Ethical Hacking</option>
+              <option>Entrepreneurship / Startups</option>
+              <option>Product / Engineering</option>
+              <option>Content / Marketing / Branding</option>
+              <option>HR / Talent / Hiring</option>
+              <option>Design / Creative</option>
+              <option>Data / Analytics</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>
+            <span class="flbl">// Preferred Track</span>
+            <select name="track" required>
+              <option value="">— select —</option>
+              <option>Track 01: Build With AI</option>
+              <option>Track 02: Cybersecurity &amp; Bug Bounty</option>
+              <option>Track 03: AI Entrepreneurship</option>
+              <option>Happy with any track</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span class="flbl">// Available On</span>
+            <select name="availability" required>
+              <option value="">— select —</option>
+              <option>Day 1 only (Fri 13 Jun)</option>
+              <option>Day 2 only (Sat 14 Jun)</option>
+              <option>Both days</option>
+              <option>Flexible</option>
+            </select>
+          </label>
+          <label>
+            <span class="flbl">// Time Commitment</span>
+            <select name="commitment" required>
+              <option value="">— select —</option>
+              <option>1 clinic hour (60 min)</option>
+              <option>Panel slot (15 min)</option>
+              <option>Both clinic + panel</option>
+              <option>Open to whatever you need</option>
+            </select>
+          </label>
+        </div>
+        <label class="full">
+          <span class="flbl">// What would you share with students?</span>
+          <textarea name="what_to_share" rows="3" required placeholder="Projects, lessons, war stories, career advice, real talk. What do you wish someone told you at 20?"></textarea>
+        </label>
+        <div class="pdpa-consent">
+          <label class="checkbox-label">
+            <input type="checkbox" name="pdpa_consent" required />
+            <span class="check-text">I consent to the collection, use, and disclosure of my personal data by Digital Defence Alliance Singapore (DDAS) and Hesed &amp; Emet Advisory Pte Ltd for the purposes of processing my application and programme coordination, in accordance with the <strong>Personal Data Protection Act (PDPA)</strong> of Singapore.</span>
+          </label>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="hud-btn pink" id="waitlistSubmit">Submit Application</button>
+          <p class="form-note">You'll receive a confirmation email if you're selected.</p>
+        </div>
+        <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
+      </form>
+      <div class="waitlist-done" id="waitlistDone" role="status" aria-live="polite">
+        <h3>▸ Application received.</h3>
+        <p>Thanks for stepping up. We'll review your application and reach out if there's a match. In the meantime, spread the word to other practitioners who might want in.</p>
+        <div style="margin-top:20px;"><a href="index.html" class="hud-btn outline">← Back to APEX Home</a></div>
       </div>
     </div>
   </div>
