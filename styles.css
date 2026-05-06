@@ -332,7 +332,7 @@ em{font-style:normal;color:var(--cy)}
 
 .org-bottom{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:40px;padding-top:32px;border-top:1px solid var(--bg3);text-align:center}
 .org-he-row{display:flex;align-items:center;gap:12px}
-.org-he-svg-sm{height:40px;width:auto;color:#fff;filter:drop-shadow(0 0 6px rgba(0,255,245,.3))}
+.org-he-svg-sm{height:60px;width:auto;color:#fff;filter:drop-shadow(0 0 6px rgba(0,255,245,.3))}
 #organisers{padding:60px 0;border:none}
 
 #closing{text-align:center;padding:120px 0}
