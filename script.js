@@ -166,7 +166,7 @@
       done.scrollIntoView({behavior:'smooth',block:'center'});
     }catch(err){
       msg.className='form-msg error';
-      msg.textContent='Something went wrong. Please email waitlist@apex2026.sg instead.';
+      msg.textContent='Something went wrong. Please email apex@hesedemet.asia instead.';
       form.classList.remove('sending');
       submitBtn.textContent='Join The Waitlist';
     }
