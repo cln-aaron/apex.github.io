@@ -1,5 +1,16 @@
 /* APEX 2026 — Cyberpunk × Roblox interactions */
 
+// Popup dismiss
+(function(){
+  const popup=document.getElementById('popup');
+  const btn=document.getElementById('popupClose');
+  if(!popup||!btn)return;
+  btn.addEventListener('click',()=>{
+    popup.classList.add('hidden');
+    setTimeout(()=>popup.remove(),500);
+  });
+})();
+
 // Floating background blocks
 (function(){
   const c=document.querySelector('.bg-blocks');
