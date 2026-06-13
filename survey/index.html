@@ -72,15 +72,6 @@
         </div>
         <div class="form-row">
           <label>
-            <span class="flbl">// Which track were you in?</span>
-            <select name="track" required>
-              <option value="">— select —</option>
-              <option>Track 01: Build With AI</option>
-              <option>Track 02: Cybersecurity &amp; Bug Bounty</option>
-              <option>Track 03: AI Entrepreneurship</option>
-            </select>
-          </label>
-          <label>
             <span class="flbl">// Overall, how was the camp?</span>
             <select name="overall_rating" required>
               <option value="">— select —</option>
@@ -89,23 +80,6 @@
               <option>👍 Pretty good</option>
               <option>😐 It was okay</option>
               <option>👎 Could be better</option>
-            </select>
-          </label>
-        </div>
-        <label class="full">
-          <span class="flbl">// What's the biggest thing you learnt or took away?</span>
-          <textarea name="takeaway" rows="3" required placeholder="A new skill? A mindset shift? A tool you can't live without now? Tell us what stuck."></textarea>
-        </label>
-        <div class="form-row">
-          <label>
-            <span class="flbl">// How were Camp Commandant Aaron's keynote sessions?</span>
-            <select name="keynote_rating" required>
-              <option value="">— select —</option>
-              <option>🧠 Mind blown, genuinely changed how I think</option>
-              <option>🔥 Loved it, super insightful</option>
-              <option>👍 Good and useful</option>
-              <option>😐 It was alright</option>
-              <option>🤔 Didn't quite land for me</option>
             </select>
           </label>
           <label>
@@ -120,6 +94,21 @@
             </select>
           </label>
         </div>
+        <label class="full">
+          <span class="flbl">// What's the biggest thing you learnt or took away?</span>
+          <textarea name="takeaway" rows="3" required placeholder="A new skill? A mindset shift? A tool you can't live without now? Tell us what stuck."></textarea>
+        </label>
+        <label class="full">
+          <span class="flbl">// How were Camp Commandant Aaron's keynote sessions?</span>
+          <select name="keynote_rating" required style="width:100%;">
+            <option value="">— select —</option>
+            <option>🧠 Mind blown, genuinely changed how I think</option>
+            <option>🔥 Loved it, super insightful</option>
+            <option>👍 Good and useful</option>
+            <option>😐 It was alright</option>
+            <option>🤔 Didn't quite land for me</option>
+          </select>
+        </label>
         <label class="full">
           <span class="flbl">// Any feedback, comments, or shout-outs? <span class="opt">(the more honest, the better)</span></span>
           <textarea name="feedback" rows="3" placeholder="What worked? What didn't? What should we do more of? Anyone who deserves a shout-out?"></textarea>
