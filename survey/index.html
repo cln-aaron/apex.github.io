@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Camp Feedback | APEX AI Bootcamp 2026</title>
+<meta name="description" content="Share your feedback about APEX AI Bootcamp 2026."/>
+<meta name="robots" content="noindex, nofollow"/>
+<link rel="icon" type="image/svg+xml" href="../apex-logo.svg"/>
+<link rel="stylesheet" href="../styles.css?v=6"/>
+<style>
+  .survey-gate{position:fixed;inset:0;z-index:9999;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:24px;transition:opacity .45s ease}
+  .survey-gate.unlocked{opacity:0;pointer-events:none}
+  .gate-box{max-width:420px;width:100%;text-align:center;border:3px solid var(--cy);background:var(--bg2);padding:44px 34px;box-shadow:0 0 50px rgba(0,255,245,.2),6px 6px 0 rgba(0,255,245,.3)}
+  .gate-icon{font-size:46px;margin-bottom:16px}
+  .gate-box h2{font-family:'Orbitron',sans-serif;color:#fff;font-size:24px;letter-spacing:.06em;margin-bottom:10px}
+  .gate-box p{color:var(--tx2);font-size:13px;margin-bottom:24px;line-height:1.6}
+  .gate-input{width:100%;background:var(--bg);border:2px solid var(--bg3);color:var(--tx);font-family:'Space Mono',monospace;font-size:15px;padding:13px 14px;text-align:center;letter-spacing:.18em;margin-bottom:16px}
+  .gate-input:focus{outline:none;border-color:var(--cy);box-shadow:0 0 0 2px rgba(0,255,245,.15)}
+  .gate-error{color:var(--or);font-size:12px;margin-top:14px;min-height:16px;letter-spacing:.04em}
+</style>
+</head>
+<body>
+
+<div class="survey-gate" id="surveyGate">
+  <div class="gate-box">
+    <div class="gate-icon">🔒</div>
+    <h2>Restricted Access</h2>
+    <p>This feedback survey is for APEX 2026 participants only. Enter the passcode to continue.</p>
+    <input type="password" class="gate-input" id="gateInput" placeholder="PASSCODE" autocomplete="off" autocapitalize="off" autocorrect="off" />
+    <button class="hud-btn" id="gateBtn" type="button" style="width:100%;">Unlock</button>
+    <div class="gate-error" id="gateError"></div>
+  </div>
+</div>
+
+<div class="bg-blocks"></div>
+
+<nav class="hud-nav">
+  <div class="logo">
+    <a href="../index.html" class="event-link" aria-label="Back to APEX home"><img src="../apex-logo.svg" alt="" class="apex-nav-logo"/>APEX//2026</a>
+  </div>
+  <a href="../index.html" class="hud-btn outline">← Back Home</a>
+</nav>
+
+<main class="waitlist-page">
+  <div class="wrap">
+    <div class="zone-label reveal" style="color:var(--pk)">// Mission Debrief</div>
+    <div class="wl-title-row reveal">
+      <img src="../apex-logo.svg" alt="APEX 2026 Logo" class="wl-logo"/>
+      <h1 class="wl-title">Camp <em style="color:var(--pk);font-style:normal;">Feedback</em>.</h1>
+    </div>
+    <p class="wl-sub reveal">Two days done. Tell us how it went. Your feedback shapes the next one, and we need your details to send your certificate.</p>
+
+    <div class="waitlist-wrap reveal">
+      <div class="limited-banner">
+        <span class="alert-badge">🎓 CERTIFICATE + FEEDBACK</span>
+        <p>Takes about 2 minutes. Be honest, be real. The name and email you give here are what we'll use to issue your certificate of completion.</p>
+      </div>
+
+      <!-- TODO: replace action with your survey Formspree endpoint -->
+      <form class="waitlist-form" id="waitlistForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Camp Feedback — APEX 2026" />
+        <input type="hidden" name="form_type" value="camp_feedback" />
+        <div class="form-row">
+          <label>
+            <span class="flbl">// Full Name <span class="opt">(for your certificate)</span></span>
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label>
+            <span class="flbl">// Email <span class="opt">(for your certificate)</span></span>
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span class="flbl">// Which track were you in?</span>
+            <select name="track" required>
+              <option value="">— select —</option>
+              <option>Track 01: Build With AI</option>
+              <option>Track 02: Cybersecurity &amp; Bug Bounty</option>
+              <option>Track 03: AI Entrepreneurship</option>
+            </select>
+          </label>
+          <label>
+            <span class="flbl">// Overall, how was the camp?</span>
+            <select name="overall_rating" required>
+              <option value="">— select —</option>
+              <option>🔥🔥🔥 Best two days ever</option>
+              <option>🔥 Really enjoyed it</option>
+              <option>👍 Pretty good</option>
+              <option>😐 It was okay</option>
+              <option>👎 Could be better</option>
+            </select>
+          </label>
+        </div>
+        <label class="full">
+          <span class="flbl">// What's the biggest thing you learnt or took away?</span>
+          <textarea name="takeaway" rows="3" required placeholder="A new skill? A mindset shift? A tool you can't live without now? Tell us what stuck."></textarea>
+        </label>
+        <div class="form-row">
+          <label>
+            <span class="flbl">// How were Camp Commandant Aaron's keynote sessions?</span>
+            <select name="keynote_rating" required>
+              <option value="">— select —</option>
+              <option>🧠 Mind blown, genuinely changed how I think</option>
+              <option>🔥 Loved it, super insightful</option>
+              <option>👍 Good and useful</option>
+              <option>😐 It was alright</option>
+              <option>🤔 Didn't quite land for me</option>
+            </select>
+          </label>
+          <label>
+            <span class="flbl">// Would you recommend APEX to a friend?</span>
+            <select name="recommend" required>
+              <option value="">— select —</option>
+              <option>100% — already telling everyone</option>
+              <option>Yes, definitely</option>
+              <option>Probably</option>
+              <option>Maybe</option>
+              <option>Not really</option>
+            </select>
+          </label>
+        </div>
+        <label class="full">
+          <span class="flbl">// Any feedback, comments, or shout-outs? <span class="opt">(the more honest, the better)</span></span>
+          <textarea name="feedback" rows="3" placeholder="What worked? What didn't? What should we do more of? Anyone who deserves a shout-out?"></textarea>
+        </label>
+        <div class="form-submit">
+          <button type="submit" class="hud-btn pink" id="waitlistSubmit">Submit Feedback</button>
+          <p class="form-note">Your certificate will be sent to the email above.</p>
+        </div>
+        <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
+      </form>
+      <div class="waitlist-done" id="waitlistDone" role="status" aria-live="polite">
+        <h3>▸ Feedback received. Thank you.</h3>
+        <p>You're a legend. Your certificate of completion will be sent to your email. Now go build something with everything you learnt.</p>
+        <div style="margin-top:20px;"><a href="../index.html" class="hud-btn outline">← Back to APEX Home</a></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="ln footer-produced">
+    <span class="footer-prod-lbl">Conceptualised &amp; Produced by</span>
+    <a href="https://www.hesedemet.asia" target="_blank" rel="noopener" class="footer-he">
+      <svg class="footer-he-logo" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M100,8 A14,14 0 0,1 100,36 A14,14 0 0,1 100,8 Z M100,15 A7,7 0 0,0 100,29 A7,7 0 0,0 100,15 Z"/>
+        <rect x="97" y="29" width="6" height="163"/><rect x="20" y="76" width="160" height="7"/>
+        <rect x="54" y="89" width="7" height="88"/><rect x="54" y="128" width="43" height="7"/>
+        <rect x="103" y="93" width="46" height="7"/><rect x="103" y="122" width="37" height="7"/><rect x="103" y="156" width="46" height="7"/>
+        <path d="M97,186 C80,186 50,183 26,200 L18,212 L34,205 C56,196 82,192 97,192 Z"/>
+        <path d="M103,186 C120,186 150,183 174,200 L182,212 L166,205 C144,196 118,192 103,192 Z"/>
+      </svg>
+      <span class="footer-he-name">Hesed<span style="color:var(--pk)">&amp;</span>Emet Advisory</span>
+    </a>
+  </div>
+  <div class="ln footer-addr">#42-00, Suntec Tower Three · 8 Temasek Blvd · Singapore 038988</div>
+  <div class="ln footer-copy">&copy; 2026 Hesed &amp; Emet Advisory Pte Ltd. All rights reserved.</div>
+</footer>
+
+<script>
+  (function(){
+    var PASS='vibethlete';
+    var gate=document.getElementById('surveyGate');
+    var input=document.getElementById('gateInput');
+    var btn=document.getElementById('gateBtn');
+    var err=document.getElementById('gateError');
+    document.body.style.overflow='hidden';
+    function unlock(){
+      gate.classList.add('unlocked');
+      document.body.style.overflow='';
+      setTimeout(function(){ if(gate&&gate.parentNode) gate.parentNode.removeChild(gate); },500);
+    }
+    function check(){
+      if(input.value.trim().toLowerCase()===PASS){ unlock(); }
+      else{ err.textContent='Incorrect passcode. Try again.'; input.value=''; input.focus(); }
+    }
+    btn.addEventListener('click',check);
+    input.addEventListener('keydown',function(e){ if(e.key==='Enter'){ e.preventDefault(); check(); } });
+    input.focus();
+  })();
+</script>
+<script src="../script.js?v=5"></script>
+</body>
+</html>
