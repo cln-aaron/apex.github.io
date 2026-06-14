@@ -8,30 +8,8 @@
 <meta name="robots" content="noindex, nofollow"/>
 <link rel="icon" type="image/svg+xml" href="../apex-logo.svg"/>
 <link rel="stylesheet" href="../styles.css?v=6"/>
-<style>
-  .survey-gate{position:fixed;inset:0;z-index:9999;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:24px;transition:opacity .45s ease}
-  .survey-gate.unlocked{opacity:0;pointer-events:none}
-  .gate-box{max-width:420px;width:100%;text-align:center;border:3px solid var(--cy);background:var(--bg2);padding:44px 34px;box-shadow:0 0 50px rgba(0,255,245,.2),6px 6px 0 rgba(0,255,245,.3)}
-  .gate-icon{font-size:46px;margin-bottom:16px}
-  .gate-box h2{font-family:'Orbitron',sans-serif;color:#fff;font-size:24px;letter-spacing:.06em;margin-bottom:10px}
-  .gate-box p{color:var(--tx2);font-size:13px;margin-bottom:24px;line-height:1.6}
-  .gate-input{width:100%;background:var(--bg);border:2px solid var(--bg3);color:var(--tx);font-family:'Space Mono',monospace;font-size:15px;padding:13px 14px;text-align:center;letter-spacing:.18em;margin-bottom:16px}
-  .gate-input:focus{outline:none;border-color:var(--cy);box-shadow:0 0 0 2px rgba(0,255,245,.15)}
-  .gate-error{color:var(--or);font-size:12px;margin-top:14px;min-height:16px;letter-spacing:.04em}
-</style>
 </head>
 <body>
-
-<div class="survey-gate" id="surveyGate">
-  <div class="gate-box">
-    <div class="gate-icon">🔒</div>
-    <h2>Restricted Access</h2>
-    <p>This feedback survey is for APEX 2026 participants only. Enter the passcode to continue.</p>
-    <input type="password" class="gate-input" id="gateInput" placeholder="PASSCODE" autocomplete="off" autocapitalize="off" autocorrect="off" />
-    <button class="hud-btn" id="gateBtn" type="button" style="width:100%;">Unlock</button>
-    <div class="gate-error" id="gateError"></div>
-  </div>
-</div>
 
 <div class="bg-blocks"></div>
 
@@ -151,28 +129,6 @@
   <div class="ln footer-copy">&copy; 2026 Hesed &amp; Emet Advisory Pte Ltd. All rights reserved.</div>
 </footer>
 
-<script>
-  (function(){
-    var PASS='vibethlete';
-    var gate=document.getElementById('surveyGate');
-    var input=document.getElementById('gateInput');
-    var btn=document.getElementById('gateBtn');
-    var err=document.getElementById('gateError');
-    document.body.style.overflow='hidden';
-    function unlock(){
-      gate.classList.add('unlocked');
-      document.body.style.overflow='';
-      setTimeout(function(){ if(gate&&gate.parentNode) gate.parentNode.removeChild(gate); },500);
-    }
-    function check(){
-      if(input.value.trim().toLowerCase()===PASS){ unlock(); }
-      else{ err.textContent='Incorrect passcode. Try again.'; input.value=''; input.focus(); }
-    }
-    btn.addEventListener('click',check);
-    input.addEventListener('keydown',function(e){ if(e.key==='Enter'){ e.preventDefault(); check(); } });
-    input.focus();
-  })();
-</script>
 <script src="../script.js?v=5"></script>
 </body>
 </html>
